@@ -360,11 +360,11 @@
       <p class="title">Redesign</p>
 
       <ul class="nav nav-tabs">
-        <li class="active"><a data-toggle="tab" href="#r1">Home Page</a></li>
-        <li><a data-toggle="tab" href="#r2">Two</a></li>
-        <li><a data-toggle="tab" href="#r3">Three</a></li>
-        <li><a data-toggle="tab" href="#r4">Four</a></li>
-        <li><a data-toggle="tab" href="#r5">Five</a></li>
+        <li  class="active"><a data-toggle="tab" href="#r1">Home</a></li>
+        <li><a data-toggle="tab" href="#r2">Kayaking</a></li>
+        <li><a data-toggle="tab" href="#r3">Program Details</a></li>
+        <li><a data-toggle="tab" href="#r4">Search Results</a></li>
+        <li><a data-toggle="tab" href="#r5">Login</a></li>
       </ul>
       <div class="tab-content">
         <!--home page redesign-->
@@ -395,61 +395,149 @@
         </div>
         <!--kayaking page redesign-->
         <div id="r2" class="tab-pane fade">
-          <!--<img class="img-responsive" src="images/recpage/scrolling-error.png"></img>-->
-          <p><br></p>
           <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
-              <div class="item active">
+              <div class="item active" style="text-align:center;">
                 <img src="images/recpage/redesign/r2-1.png">
-                <p>Page 1</p>
+                <p>Part 1</p>
               </div>
 
-              <div class="item">
+              <div class="item" style="text-align:center;">
                 <img src="images/recpage/redesign/r2-2.png">
-                <p>Page 2</p>
+                <p>Part 2</p>
               </div>
 
-              <div class="item">
+              <div class="item" style="text-align:center;">
                 <img src="images/recpage/redesign/r2-3.png">
-                <p>Page 3</p>
+                <p>Part 3</p>
               </div>
             </div>
 
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-              <span class="sr-only">Next</span>
-            </a>
           </div>
+          <p><br></p>
+          <p><b>Part 1:</b> We redesigned the page that appears once the user clicks on "kayaking"
+          through the "indoor activities" tab.  We discarded the menu bar that had the
+          four unnecessary tabs (registration, group adventures, leader training, and risk
+          management).  These tabs aren't useful to the user when they are looking
+          for their desired activity.  By deleting that menu bar, we were able to move
+          the rest of the page contents upward, so when the page first opens the user
+          will be able to see an aesthetic picture of the activity and the name of
+          the activity, which was previously hidden due to the menu bar taking up space.
+          By having the title visible, the user knows exactly what page they are on,
+          which reduces the <b><u>mistake</u></b> of users leaving the page because
+          they believe they are on the wrong one.</p>
+          <p><b>Part 2:</b> As the user scrolls down the page, our redesign includes
+          pictures of the offered activities with their titles below.  We wanted
+          to emphasize the pictures because many of our interviewees noted how they
+          liked them and found them as good representations of the activity.  We
+          also decided to hide the information about the activity to allow for
+          easier readability of the entire list, which we discuss as being in our
+          ideal design space.  So unless the "+" is clicked, the user will not have
+          to go through information about an activity that they don't wish to read
+          about.</p>
+          <p><b>Part 3:</b> When the user clicks the "+" for more information, the
+          activity details will be revealed and thhe maximize function ("+") will change
+          to a minimizing function ("-").  The most important thing we changed on this
+          page to reduce error was to delete the "check availability" link.  This was
+          previously the only link provided to the user, so they would click it
+          because they had nowhere else to click to schedule a trip.  However, this
+          link didn't lead to the "program details" page, so when clicked it leads to a
+          <b><u>knowledge-based mistake</u></b> because the user didn't have a clear
+          conceptual model as to further their registration process.  By removing
+          this link, this <b><u>signifies</u></b> to the user that the link to the
+          "program details" page isn't in the activity details text, but is the activity
+          title itself.</p>
 
         </div>
-        <!--facebook error-->
+        <!--program details-->
         <div id="r3" class="tab-pane fade">
-          <img class="img-responsive" src="images/recpage/facebook-error.png"></img>
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active" style="text-align:center;">
+                <img src="images/recpage/redesign/r3-1.png">
+                <p>Part 1</p>
+              </div>
+
+              <div class="item" style="text-align:center;">
+                <img src="images/recpage/redesign/r3-2.png">
+                <p>Part 2</p>
+              </div>
+            </div>
+          </div>
           <p><br></p>
+          <p>Once the user has chosen their activity, they will click on the activity
+          title or the picture and will be led to a "program details" page about
+          the activity they have chosen.  Our first fix was to place an emphasis
+          on the different prices offered for the same activity based on who you are.
+          In the current design, they have the highest price next to the activity
+          title, which might turn people away if they think it's too expensive, when
+          they might actually be able to pay a lower price.  Next we edited the program
+          offerings list by altering the color pattern.  Instead of the current
+          design's alternating color pattern, we decided to dim the offerings that
+          have already expired or have closed registration by coloring the box gray.
+          We also attempt to <b><u>signify</u></b> that you can no longer sign up
+          for that activity by making the registration expiration text red.</p>
 
         </div>
-        <!--new account error-->
+        <!--sesarch results-->
         <div id="r4" class="tab-pane fade">
+          <img class="img-responsive" src="images/recpage/redesign/r4.png"></img>
           <p><br></p>
-          <img class="img-responsive" src="images/recpage/newaccount-error.png"></img>
-          <p><br></p>
-
+          <p>Another way of searching for a program is if the user uses the search
+          bar.  In the current design, the search results will differ depending on
+          if you search on the "UCSD Recreation" website, which gives you articles,
+          versus the "UCSD Rec" website, which gives you programs.  We link these
+          two search results together because if you start your search on "UCSD
+          Recreation" you will eventually end up on "UCSD Rec", and if you start
+          on "UCSD Rec", you will miss out on some of the information that "UCSD
+          Recreation" provided.  By combining the two search results, we hope to
+          avoid confusion for the user who might not know the difference between
+          the two sites.</p>
         </div>
-        <!---->
+        <!--login-->
         <div id="r5" class="tab-pane fade">
+          <img class="img-responsive" src="images/recpage/redesign/r5.png"></img>
           <p><br></p>
-          <img class="img-responsive" src="images/recpage/newaccount-error.png"></img>
-          <p><br></p>
+          <p>This is the most important part of the redesign because it is in
+          attempt to reduce an error that happened for 76% of our interviewees.
+          This <b><u>knowledge-based mistake</u></b> was the interviewee attempting
+          to sign in by typing in their username and password into the "community member"
+          login.  This was a pretty significant and frustrating error for our
+          interviewees, and many of them ended up getting stuck at this part of the
+          process for a short period of time.  Many noted how in the current design,
+          it is very easy to overlook the text saying to click the blue box if you
+          are associated with UCSD because your eye is immediately drawn to the standard
+          login boxes.  To avoid this mistake, we have made one half of the page a
+          UCSD login and the other half a community member login.  So by having the
+          two logins side by side instead of stacked on top of each other with the login
+          box looking like a simple text box or header, this will <b><u>signify</u></b>
+          to the user that if they are associated with UCSD they can click the blue box
+          to login.</p>
 
         </div>
       </div>
+    </div>
+  </div>
+</div>
+
+<!--design space-->
+<div class="enter">
+  <div class="container" id="design-space">
+    <div class="padding">
+      <p class="title">Conclusion</p>
+      <p>It was really fun getting to do a thorough analysis of this website.
+      The process helped me to better understand slips and mistakes and how
+      we can minimize them, as well as the importance of doing user testing and
+      interviews.  Without doing interviews, we would not have been able to
+      collect the data needed to help us identify ways to improve this website.
+      After this project, I hope to continue to think about and implement
+      design principles in my future projects.
+      </p>
+
     </div>
   </div>
 </div>
