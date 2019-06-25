@@ -1,92 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Allison Patacsil Portfolio</title>
+  <title>Allison Patacsil</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/index.css"> <!-- Home Page CSS -->
-  <link rel="stylesheet" href="css/animations.css">
-  <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"> <!-- Poppins Font -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="icon" href="images/favicon.jpg">
-  <script src="index.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-
-<div class="slideDown" class="slide">
-  <div class="container" id="header">
-    <a class="menu" href="index.html"><h1 id="header-name">Allison Patacsil</h1></a>
-    <a class="menu" href="#projects">projects.</a> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-    <a class="menu" href="https://drive.google.com/file/d/1DWIJmjKnV26rYG2kM2Wir_ilHa3csmmf/view?usp=sharing" target="_blank"> resume. </a>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="">allison patacsil</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="" style="color: #EDB5BF;">Portfolio</a></li>
+          <li><a href="https://drive.google.com/file/d/1J319EnISYHy2X2Df_wCSpY3ATFsWzMPq/view?usp=sharing" target="_blank">Resume</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div style="padding:50px;"></div>
+  <div id="portfolio-intro">
+    <p style="color: #86B3D1;">Cognitive Science HCI @ UC San Diego</p>
+    Graduating Fall 2019
   </div>
-</div>
 
-<!--intro-->
-<div class="slideUp" class="slide">
-  <div class="container">
-    <div class="padding">
-      <p>Hello!  I'm a product designer studying Human Computer Interaction at
-        UC San Diego.  I love playing music, editing videos, and going on beautiful hikes!<br><br>
-
-        I last worked in a team of three to create the web app Coco . . . <a class="line-link" href="coco.html">read about it here</a>
-      </p>
+<div class="container">
+  <div class="portfolio-padding">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <img class="card-img-top" src="images/coco-preview.jpeg" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Coco</h4>
+            <p class="card-text-info">Case Study - Spring 2019</p>
+            <p class="card-text">Bridging the gap in communication between children and their therapists</p>
+            <div style="text-align:center;"><a href="#" class="portfolio-btn">Coming Soon</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <img class="card-img-top" src="images/happyhouse-preview.jpeg" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Happy House</h4>
+            <p class="card-text-info">Case Study - Fall 2018</p>
+            <p class="card-text">Creating a system of communication that improves household management</p>
+            <div style="text-align:center;"><a href="happy-house.html" class="portfolio-btn">Read Case Study</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <img class="card-img-top" src="images/rec-preview.jpeg" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">UCSD Rec Redesign</h4>
+            <p class="card-text-info">Case Study - Winter 2018</p>
+            <p class="card-text">Redesigning the recreation website based on user interviews from UCSD students.</p>
+            <div style="text-align:center;"><a href="#" class="portfolio-btn">Coming Soon</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <img class="card-img-top" src="https://cdn.pixabay.com/photo/2017/08/06/11/36/cat-2591623_960_720.jpg" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Case Study</h4>
+            <p class="card-text-info">Case Study - Season Year</p>
+            <p class="card-text">Blah blah blah. Blah blah blah. Blah blah blah. Blah blah blah. Blah blah blah.</p>
+            <div style="text-align:center;"><a href="#" class="portfolio-btn">Coming Soon</a></div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-
-
-
-<div class="slideUp" class="slide">
-  <div class="container" id="happyhouse-project">
-    <div class="padding">
-      <p class="title" id="projects"> projects </p><br>
-      <!--coco project info-->
-      <div class="row">
-        <div class="col-sm-8">
-          <img class="img-responsive" src="images/coco-poster.jpg" style="margin-top:20px; margin-bottom:20px;"></img>
-        </div>
-        <div class="col-sm-4">
-          <p style="color: gray; font-weight: 600; font-size:30px;">
-            Human Centered Design</p>
-          <p>Going through the design process to implement a web app</p><br>
-          <a class="site-link" href="coco.html">Read Case</a>
-        </div>
-      </div>
-      <p><br></p>
-      <!--happyhouse project info-->
-      <div class="row">
-        <div class="col-sm-4">
-          <p style="color: gray; font-weight: 600; font-size:30px;">
-            User Experience Design</p>
-          <p>Going through the design process to implement a web app</p><br>
-          <a class="site-link" href="happyhouse.html">Read Case</a>
-          <a class="site-link" href="https://lee-tammy.github.io/HappyHouse/login.html" target="_blank">Visit Site</a>
-        </div>
-        <div class="col-sm-8">
-          <img class="img-responsive" src="images/happyhouse-poster.jpg" style="margin-top:20px; margin-bottom:20px;"></img>
-        </div>
-      </div>
-      <p><br></p>
-      <!--ucsd recreation page info-->
-      <div class="row">
-        <div class="col-sm-8">
-          <img class="img-responsive" src="images/rec-poster.jpg" style="margin-top:20px; margin-bottom:20px;"></img>
-        </div>
-        <div class="col-sm-4">
-          <p style="color: gray; font-weight: 600; font-size:30px;">
-            Human Centered Design</p>
-          <p>Using human centered design technique to redesign a website</p><br>
-          <a class="site-link" href="ucsdrecreation.html">Read Case</a>
-        </div>
-      </div>
-
-    </div><!--end of the padding-->
-  </div><!--end of the container-->
-</div>
-
+<footer>
+  <br>
+  <hr>
+  <br>
+  <div>
+    <p>agpatacsil@gmail.com | Tel: 206.778.8243 | <a href="https://www.linkedin.com/in/allison-p-104b86102/" target="_blank">LinkedIn</a></p>
+    <p style="font-size: 14px">&copy 2019 by Allison Patacsil</p>
+  </div>
+  <br>
+  <br>
+</footer>
 
 </body>
 </html>
