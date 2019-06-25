@@ -1,0 +1,327 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Happy House | Allison Patacsil</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="imagehover.css-master/css/imagehover.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">allison patacsil</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">Portfolio</a></li>
+          <li><a href="https://drive.google.com/file/d/1J319EnISYHy2X2Df_wCSpY3ATFsWzMPq/view?usp=sharing" target="_blank">Resume</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div style="padding:40px;"></div>
+
+  <div class="container">
+    <div class="padding">
+      <div class="case-title"><p>Happy House</p></div>
+      <p class="case-info">Case Study | October - December 2018</p>
+      <br>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="header">Overview</p>
+          <p>Happy House is a mobile app designed to mitigate roommate conflicts
+             with an improved system of communication. We worked in teams of 3
+             to figure out problems related to college students. My team started
+             our design process with interviews and ended with a high fidelity prototype.
+          </p>
+        </div>
+        <div class="col-sm-6">
+          <p class="header">Responsibilities</p>
+          <ul>
+          <li>Conducting user interviews and analyzing them
+          <li>Sketching multiple paper prototypes
+          <li>Wireframing screens for user testing
+          <li>High fidelity prototype created in Figma
+          </ul>
+        </div>
+      </div>
+      <br>
+
+      <p class="header">Problem</p>
+      <p>Tension between roommates builds up when trash isn't taken out, dishes
+         aren't cleaned, rent doesn't get payed, etc. These issues are due to
+         poor household management stemming from miscommunication. How might we
+         be able to improve communication between roommates?
+      </p>
+      <br>
+
+      <p class="header">Research</p>
+      <p>We interviewed multiple UCSD students about their housing situations,
+         management and organization styles, and memorable/significant roommate stories.
+
+
+       </p>
+
+      <p class="subheader">Interview Observations</p>
+      <p>Knowing that (not doing) chores is a common root of roommate conflicts,
+         we analyzed how people typically distribute chores and were able to
+         identify two distinct styles with their main difference being how chores are
+         assigned (see figure below). Each come with their own set of problems,
+         but both heavily rely on an expectation that people are responsible and
+         remember to do their chores. However there is no
+         guarantee that people will contribute their fair share, which is why
+         a system of reminders and way of holding people accountable is needed.</p>
+
+      <img src="images/happyhouse-observations-charts.png" class="research-pic">
+      <p class="img-caption">ways of distributing chores</p>
+
+      <p>Another takeaway from our interviews was that messages about housing tend
+         to get lost as they can easily go unnoticed amongst more exciting messages
+         about a party, gossip, etc. Additionally, most interviewees said they used
+         text and facebook messenger which makes messages getting lost even more likely
+         as it can be hard to juggle between two apps. This presents a need for one
+         system of communication that solely handles household aspects so that there's
+         no other distractions.</p>
+
+      <p>In summary, our interviews led us to focus on improving how roommates
+         communicate household needs as this seems to be at the root of most of the problems we
+         observed.</p>
+
+      <p class="subheader">Storyboards</p>
+      <p>We constructed storyboards to help us come up with ideas on where we can
+         target improving communication. Looking at scenarios roommates might
+         encounter helped us narrow our
+         ideas for what functionalities to include in our app. By addressing 3
+         different problems, we were able to come up with 3 main functionalities
+         for our app, which involves a chores tracker, creating house rules,
+         and a chores reminder.</p>
+      <img src="images/Group.png" class="storyboard-pic">
+      <p class="img-caption">storyboards of scenarios roommates might encounter</p>
+      <br>
+      <p><b>Chores Tracker</b>: The chore tracker storyboard was inspired by how
+         house-related messages get lost or overlooked in the midst of other texts,
+         Facebook messages, etc. We want to emphasize these messages by confining
+         house-related chats to one app, so people don't have to mix house issues
+         with other messages. We like this idea because it allows roommates to
+         read a continuous house-related feed instead of having to scroll back
+         through texts.
+      </p>
+      <p><b>House Rules</b>: Different understandings of how to do a chore can
+         lead to unnecessary arguments over wrongful completions of that chore.
+         The house rules storyboard centers around this need for a defined set
+         of rules/steps, so that everyone is on the same page. We liked this idea
+         because it helps hold roommates more accountable for doing a chore correctly,
+         and it simply helps define a list of house rules and steps for chores
+         that can easily be accessed.
+      </p>
+      <p><b>Chores Reminder</b>: Since chores aren't assigned using the tally chart
+         method, this allows a lot of freedom and flexibility, which can be good,
+         but can also be bad because you're relying on the idea that people will
+         complete their fair share and will do so consistently. The dirty dishes
+         storyboard includes a feature that helps assign specific chores to people
+         and sends reminders, so that there is no confusion as to who is in charge
+         of what and holds people accountable for doing their fair share.
+      </p>
+
+      <p class="header">Wireframes</p>
+      <p>With our main functionalities in mind, we thought of the user flow we wanted
+         and sketched out some screens. In this user flow, we focused on creating and assigning tasks,
+         as well as being able to set a reminder for a task.</p>
+
+      <div class="row">
+        <div class="col-sm-4">
+          <img class="prototype" src="images/prototype-one/p1-1.jpg">
+        </div>
+        <div class="col-sm-4">
+          <img class="prototype" src="images/prototype-one/p1-2.jpg">
+        </div>
+        <div class="col-sm-4">
+          <img class="prototype" src="images/prototype-one/p1-3.jpg">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <img class="prototype" src="images/prototype-one/p1-4.jpg">
+        </div>
+        <div class="col-sm-4">
+          <img class="prototype" src="images/prototype-one/p1-5.jpg">
+        </div>
+        <div class="col-sm-4">
+          <img class="prototype" src="images/prototype-one/p1-6.jpg">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <img class="prototype" src="images/prototype-one/p1-7.jpg">
+        </div>
+        <div class="col-sm-4">
+          <img class="prototype" src="images/prototype-one/p1-8.jpg">
+        </div>
+        <div class="col-sm-4">
+          <img class="prototype" src="images/prototype-one/p1-9.jpg">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <img class="prototype" src="images/prototype-one/p1-10.jpg">
+        </div>
+        <div class="col-sm-4">
+          <img class="prototype" src="images/prototype-one/p1-11.jpg">
+        </div>
+        <div class="col-sm-4">
+          <img class="prototype" src="images/prototype-one/p1-12.jpg">
+        </div>
+      </div>
+
+
+      <p class="subheader">User Testing</p>
+      <p>With the wireframes we sketched out, we tested the interactions
+         of our app with students. Below is a list of feedback we received in
+         addition to observations we made.</p>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <b style="color: #99CED3">To Do List</b>
+          <ul>
+            <li>multiple interviewees said they probably wouldn't use the alarm feature
+            <li>"is there a message thread for each chore?"
+            <li>don't want notifications sent each time a chore is completed!!!
+            <li>"if you let people reject a chore that was assigned to them, it might
+                 never get done"
+            <li>tabs need to be moved to the top
+          </ul><br>
+          <b style="color: #99CED3">Supplies</b>
+          <ul>
+            <li>change 'supplies' to 'tasks' for clarification
+            <li>not inuitive to press the checkbox to assign a task >>> need directions
+            <li>tabs need to be moved to the top
+            <li>multiple people tried to complete a task in the 'complete' tab >>>
+                change the name to history
+          </ul><br>
+        </div>
+        <div class="col-sm-6">
+          <b style="color: #99CED3">Schedules</b>
+          <ul>
+            <li>"seems unnecessary because you could just use a google calendar"
+            <li>not clear if this is for class schedules, work schedules, etc.
+          </ul><br>
+          <b style="color: #99CED3">House Rules</b>
+          <ul>
+            <li>"can anyone add a house rule?"
+            <li>"what if people don't agree with it?"
+          </ul><br>
+          <b style="color: #99CED3">Billings</b>
+          <ul>
+            <li>"can you pay your bills from here?"
+            <li>"wouldn't this go under schedules?"
+          </ul><br>
+        </div>
+      </div>
+
+        <p class="header">Prototype</p>
+        <p>After reviewing the feedback we received from user testing, we made
+           significant changes to our notification system, task creation functionality,
+           and wording. These changes provide clarity for our user making their interactions
+           with our app easier.</p>
+
+             <div id="myCarousel" class="carousel slide" data-ride="carousel">
+               <!-- Indicators -->
+               <ol class="carousel-indicators">
+                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                 <li data-target="#myCarousel" data-slide-to="1"></li>
+                 <li data-target="#myCarousel" data-slide-to="2"></li>
+                 <li data-target="#myCarousel" data-slide-to="3"></li>
+                 <li data-target="#myCarousel" data-slide-to="4"></li>
+               </ol>
+
+               <!-- Wrapper for slides -->
+               <div class="carousel-inner">
+                 <div class="item active"><img src="images/happyhouse-changes-1.png"></div>
+                 <div class="item"><img src="images/happyhouse-changes-2.png"></div>
+                 <div class="item"><img src="images/happyhouse-changes-3.png"></div>
+                 <div class="item"><img src="images/happyhouse-changes-4.png"></div>
+                 <div class="item"><img src="images/happyhouse-changes-5.png"></div>
+               </div>
+             </div>
+
+        <p>Although we made some pretty significant changes, overall we kept the
+           user flow relatively similar to our initial design. We made tweaks to
+           improve the problems we observed but kept our focus on creating an
+           easy-to-use communication system for housing needs.</p><br>
+
+        <div class="row">
+          <div class="col-sm-4" style="margin-bottom: 10px">
+            <img class="gifs" src="gifs/complete-task.gif"><br>
+            <p class="img-caption">completing a task</p>
+          </div>
+          <div class="col-sm-4" style="margin-bottom: 10px">
+            <img class="gifs" src="gifs/create-task.gif"><br>
+            <p class="img-caption">creating a task</p>
+          </div>
+          <div class="col-sm-4" style="margin-bottom: 10px">
+            <img class="gifs" src="gifs/assign-task.gif"><br>
+            <p class="img-caption">assigning a task</p>
+          </div>
+        </div>
+      <p class="subheader">Reflection</p>
+      <p>Overall my team and I were really proud of our final design. Roommate
+         conflicts are something that everyone experiences (you're lucky if you
+         haven't lol), so we're glad we could create an app that a lot of people
+         could use! I think my favorite part was probably doing user testing and
+         realizing that features we thought were useful were not thought to be
+         helpful for a lot of our testers. It really showed us that even though
+         you design something with the user in mind, it might not actually be
+         what the user wants/needs, which is why user testing is so important to
+         validate our designs!</p>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <iframe style="border: none; margin: auto; display: block" height="600px" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FNdM3Dk93sXoQ165xlgfD44EX%2FUntitled%3Fnode-id%3D0%253A1%26scaling%3Dscale-down" allowfullscreen></iframe>
+        </div>
+        <div class="col-sm-6">
+          <p class="subheader">Prototype Walkthrough</p>
+          <p>Interact with our prototype to complete these steps!</p>
+          <ul>
+            <li>Complete both of your tasks
+            <li>Create a new task and assign it to Emma
+            <li>Assign the unassigned task to Lily
+            <li>See what people are working on
+            <li>See what people have completed
+            <li>Check and respond to your messages
+            <li>Review the house rules
+          </ul>
+        </div>
+      </div>
+      <br>
+    </div>
+  </div>
+  <footer>
+    <br>
+    <hr>
+    <br>
+    <div>
+      <p>agpatacsil@gmail.com | Tel: 206.778.8243 | <a href="https://www.linkedin.com/in/allison-p-104b86102/" target="_blank">LinkedIn</a></p>
+      <p style="font-size: 14px">&copy 2019 by Allison Patacsil</p>
+    </div>
+    <br>
+    <br>
+  </footer>
+
+<body>

@@ -1,0 +1,241 @@
+/*navigation menu*/
+.navbar-inverse {
+  background-color: white;
+  border-color: white;
+}
+.container-fluid{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+
+/*navigation menu toggle bar*/
+.navbar-inverse .navbar-toggle {
+  margin-right: 0;
+  background-color: transparent;
+  border-color: transparent;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #EDB5BF; /*cameo pink*/
+}
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover  {
+  background-color: transparent;
+}
+.navbar-inverse .navbar-collapse {
+  border-color: white;
+}
+
+
+/*navigation menu - allison patacsil*/
+.navbar-inverse .navbar-brand {
+  color: #99CED3; /*sea foam*/
+  font-size: 30px;
+  line-height: 30px;
+  padding: 10px 10px;
+  font-weight: 400;
+}
+.navbar:link, .navbar:visited {
+  color: #5F6366; /*granite gray*/
+  text-decoration: none;
+}
+.navbar-inverse .navbar-brand:hover {
+  color: #EDB5BF; /*cameo pink*/
+}
+
+
+/*navigation menu - portfolio, resume, about*/
+.navbar-inverse .navbar-nav>li>a:link, .navbar-inverse .navbar-nav>li>a:visited {
+  color: #5F6366; /*granite gray*/
+  font-size: 18px;
+}
+.navbar-inverse .navbar-nav>li>a:hover {
+  color: #EDB5BF; /*cameo pink*/
+}
+
+.navbar-inverse .navbar-nav>li>a:active {
+  color: #5F6366;
+}
+
+
+/*portfolio page*/
+.portfolio-padding {
+  padding-right: 50px;
+  padding-left: 50px;
+}
+#portfolio-intro {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 30px;
+}
+
+
+/*portfolio cards*/
+.card {
+  width: 100%;
+  background-color: white;
+  margin: 0 auto;
+  float: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card-img-top {
+  width: 100%;
+}
+.card-body {
+  padding: 15px;
+  padding-top: 5px;
+}
+.card-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+.card-text-info {
+  color: #86B3D1; /*purple*/
+  font-size: 14px;
+}
+.card-text {
+  font-size: 16px;
+}
+.portfolio-btn {
+  color: #86B3D1; /*purple*/
+  font-size: 14px;
+  border-width: 1px;
+  padding: 7px;
+  border-style: solid;
+  border-radius: 4px;
+}
+.portfolio-btn:hover {
+  color: #EDB5BF; /*cameo pink*/
+  text-decoration: none;
+}
+
+
+/*about me page*/
+#allison-picture {
+  width: 70%;
+  margin: auto;
+  display: block;
+}
+.about-padding {
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+
+/*case study*/
+.case-title {
+  text-align: center;
+  font-size: 40px;
+}
+.case-info {
+  text-align: center;
+  font-size: 14px;
+  color: #86B3D1; /*purple*/
+}
+.header {
+  font-size: 25px;
+  color: #4D6D9A; /*UCLA blue*/
+  line-height: 1;
+}
+.subheader {
+  font-size: 20px;
+  color: #86B3D1; /*purple*/
+}
+.research-pic {
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 100%;
+  margin: auto;
+  display: block;
+}
+.storyboard-pic {
+  width: 100%;
+}
+.img-caption {
+  text-align: center;
+  font-size: 16px;
+  color: #b7b7b7;
+}
+.gifs {
+  width: 100%;
+  margin: auto;
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.prototype {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 20px;
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.changes {
+  height: 300px;
+  margin: auto;
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.carousel-indicators li{
+  background-color: #B3DE81;
+}
+
+.carousel-indicators .active {
+  background-color: #265C00;
+}
+
+/*general body styling*/
+body {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  /*background-color: #99CED3; /*sea foam*/
+  font-size: 16px;
+  font-weight: 400;
+  color: #5F6366; /*granite gray*/
+}
+p {
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+li {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+}
+ul {
+  list-style-position: outside;
+  margin: 0;
+  padding-left: 30px;
+}
+.padding{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+a:link, a:visited{
+  color: #86B3D1; /*purple*/
+  text-decoration: none;
+}
+
+a:hover {
+  color: #EDB5BF; /*cameo pink*/
+  text-decoration: none;
+}
+
+a:active {
+  color: #86B3D1; /*purple*/
+  text-decoration: none;
+}
+
+hr {
+  border: 1px solid #86B3D1; /*sea foam*/
+}
+footer {
+  text-align: center;
+  color: #86B3D1; /*purple*/
+}
