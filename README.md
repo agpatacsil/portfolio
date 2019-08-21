@@ -4,6 +4,6 @@ Hello World! I'm a coffee shop lover studying human computer interaction and com
 
 In my free time, you'll find me trying out BuzzFeed's Tasty dessert recipes, hiking towards a beautiful view, or watching 'New Girl' on Netflix.
 
-<h4 align=center>Enjoy my portfolio :)</h4>
+<h4 align=center>Enjoy <a href=https://allisonpatacsil.com">my portfolio</a> :)</h4>
 <p align=center>I made it with HTML/CSS/JS<br>
 <img src="images/allison-hiking.jpeg" width=350px></p>
