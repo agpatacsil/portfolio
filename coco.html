@@ -372,7 +372,7 @@
       <div class="row">
         <div class="col-sm-4" style="margin-bottom: 10px">
           <img class="gifs" src="gifs/view-eval.gif"><br>
-          <p class="img-caption">View survey results</p>
+          <p class="img-caption">View survey responses</p>
         </div>
         <div class="col-sm-4" style="margin-bottom: 10px">
           <img class="gifs" src="gifs/change-eval.gif"><br>
@@ -384,35 +384,47 @@
         </div>
       </div>
 
-      <!-- <p><b>Recommend a doctor</b><br>
-        When the therapist logs in, they are personally greeted and have the
-        option to look at their list of clients or recommend a doctor. Note that
-        the 'recommend a doctor' feature is something we decided to add on
+      <p><b>View Client Profile</b><br>
+        To view a specific client, the therapist can go through their client list
+        and click on the client they want to check on. On the client's page will
+        be their profile information and the surveys they've been assigned.
       </p>
 
-      <p><b>The Survey</b><br>
-        Each survey is composed of kid friendly "I" statements so that they
-        focus on their own feelings and beliefs while they read through them.
-        A Likert scale is used to measure how strongly they agree or disagree
-        with each statement.
+      <p><b>View Survey Responses</b><br>
+        On the client's page, the therapist can click on the survey they want to
+        view the responses to. To make the data easy to read, we integrate a
+        Google Charts API to create a 2D line graph with the y-axis as the responses
+        (rating of 1-4 that respectively corresponds to strongly disagree-strongly
+        agree) and the x-axis as the date the responses were recorded. This data
+        visualization makes it easier to see discrepancies that could initiate
+        additional meetings or actions.
       </p>
 
-      <p><b>Feeding Coco</b><br>
-        As mentioned earlier, we took our user testing into account and made the
-        survey more interactive by inserting an animation of Coco being fed fish
-        after each survey is completed!
-      </p>
       <p>
-        <b>Coco is full</b><br>
-        Once all assigned surveys are completed, they are brought back to the
-        home screen where they see a happy and full Coco, and their work for the
-        day is done! If they decided to log in again later in the day, they will
-        still see a full Coco and are told to come back tomorrow.
-      </p> -->
+        <b>Change Assigned Surveys</b><br>
+        Also on the client's page, the therapist can choose to change the clients
+        assigned evaluations, if necessary.
+      </p>
+
+      <p>
+        <b>Add New Client</b><br>
+        When the therapist needs to add a new client, they can do so by clicking
+        the 'add' icon on the client list page. They must enter the client's
+        information and assign them their evaluations, and then the new client
+        will be found in the client list.
+      </p>
+
+      <p><b>Recommend a doctor</b><br>
+        In addition to our main functionalities, therapists can search for a
+        specialist to recommend to a client, if they feel this is necessary, by
+        clicking 'recommend a doctor' on the home page. They will choose which
+        speciliazation they need a doctor from and using the BetterDoctor API,
+        a list of specialists will be output.
+      </p>
 
       <!-- <p class="subheader">Reflection</p>
       <p>Blah blah blah
-      </p> -->
+      </p>
 
     </div><!--end of padding-->
   </div><!--end of container-->
