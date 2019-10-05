@@ -136,6 +136,7 @@ body, html {
 }
 
 
+
 /*case study*/
 .case-title {
   text-align: center;
@@ -214,9 +215,10 @@ body, html {
 /*general body styling*/
 body {
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-family: sofia-pro-soft, sans-serif;
   /*background-color: #99CED3; /*sea foam*/
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   color: #5F6366; /*granite gray*/
 }
 p {
@@ -255,4 +257,36 @@ hr {
 footer {
   text-align: center;
   color: #86B3D1; /*purple*/
+}
+#index-btn {
+  background-color: #86B3D1; /*purple*/
+  color: #ffffff;
+  font-size: 14px;
+  border-width: 1px;
+  padding: 7px;
+  padding-right: 17px;
+  padding-left: 17px;
+  margin-right: 10px;
+  border-style: solid;
+  border-radius: 4px;
+}
+#index-btn:hover {
+  background-color: #EDB5BF; /*cameo pink*/
+  text-decoration: none;
+}
+
+#first-day-picture {
+  max-height: 100vh;
+  max-width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding-right: 10%;
 }
