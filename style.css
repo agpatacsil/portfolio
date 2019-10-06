@@ -224,7 +224,7 @@ body, html {
 
 
 /* opening page styling */
-#index-btn {
+#index-btn{
   background-color: #86B3D1; /*purple*/
   color: #ffffff;
   font-size: 14px;
@@ -232,7 +232,7 @@ body, html {
   padding: 7px;
   padding-right: 17px;
   padding-left: 17px;
-  margin-right: 10px;
+  margin-right: 4px;
   border-style: solid;
   border-radius: 4px;
 }
@@ -253,6 +253,10 @@ body, html {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   padding-right: 10%;
+}
+#li-btn{
+  padding-right: 4px;
+  padding-left: 2px;
 }
 
 
