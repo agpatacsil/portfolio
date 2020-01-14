@@ -59,6 +59,15 @@ body, html {
   color: #EDB5BF; /*cameo pink*/
 }
 
+/* .navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+} */
 
 /*navigation menu - portfolio, resume, about*/
 .navbar-inverse .navbar-nav>li>a:link, .navbar-inverse .navbar-nav>li>a:visited {
@@ -100,6 +109,10 @@ body, html {
 .card-img-top {
   width: 100%;
 }
+.card-img-top:hover {
+  -webkit-filter: brightness(0.3);
+  filter: brightness(0.7);
+}
 .card-body {
   padding: 15px;
   padding-top: 5px;
@@ -129,6 +142,7 @@ body, html {
 }
 
 
+
 /*about me page*/
 #allison-picture {
   width: 70%;
@@ -144,27 +158,21 @@ body, html {
 
 /*case study*/
 .case-title {
-  text-align: center;
   font-size: 40px;
   font-family: sofia-pro;
 }
 .case-info {
-  text-align: center;
-  font-size: 14px;
-  color: #86B3D1; /*purple*/
+  font-size: 20px;
 }
 .header {
-  font-size: 25px;
-  color: #4D6D9A; /*UCLA blue*/
+  font-size: 18px;
   line-height: 1;
-  font-family: sofia-pro;
-  font-weight: 500;
+  font-weight: 700;
+  margin-top: 80px;
 }
 .subheader {
-  font-size: 20px;
-  color: #86B3D1; /*purple*/
-  font-family: sofia-pro;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 700;
 }
 .research-pic {
   padding-left: 10%;
@@ -178,14 +186,13 @@ body, html {
 }
 .img-caption {
   text-align: center;
-  font-size: 16px;
-  color: #b7b7b7;
+  font-size: 13px;
 }
 .gifs {
   width: 100%;
   margin: auto;
   display: block;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 .prototype {
   width: 100%;
@@ -264,19 +271,18 @@ body, html {
 /*general body styling*/
 body {
   /* font-family: Futura, "Trebuchet MS", Arial, sans-serif; */
-  font-family: sofia-pro-soft, sans-serif;
+  /* font-family: sofia-pro-soft, sans-serif; */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   /*background-color: #99CED3; /*sea foam*/
-  font-size: 16px;
-  font-weight: 300;
+  font-size: 15px;
+  font-weight: 200;
   color: #5F6366; /*granite gray*/
 }
 p {
-  font-weight: 400;
   line-height: 1.6;
 }
 li {
-  font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.6;
 }
 ul {
