@@ -68,7 +68,7 @@
       </div>
       <br>
 
-      <p class="header" style="margin-top: 40px">PROBLEM</p>
+      <p class="header" style="margin-top: 40px">BACKGROUND</p>
       <p>Being active is a HUGE part of my life, so when I stopped rowing, I got
         a gym membership so I could (<i>attempt to</i>) keep up my fitness! My family was
         already part of LA Fitness, so it was easy for them to add me to their plan.<br><br>
@@ -76,8 +76,8 @@
         Once my membership was good to go, my dad had me download the LA Fitness App,
         which I would need for check-in since they don’t give physical membership cards.
         I got the app, set up my account, and was good to go! However every time I go to
-        the gym I’m struck by how poorly the app is designed in regards to structure and a
-        esthetic. The home page is extremely busy, the overall app is very text heavy,
+        the gym I’m struck by how poorly the app is designed in regards to structure and
+        aesthetic. The home page is extremely busy, the overall app is very text heavy,
         acessing the membership card is difficult, and finding information is very inconvenient!<br><br>
 
         And I’m not alone in this opinion.
@@ -89,122 +89,235 @@
         decided to challenge myself and redesign this app!
       </p>
 
-      <p class="header">RESEARCH</p>
-      <p>Since people tend to have strong feelings when they go out of their
-        way to write reviews, I started by reading 100 of the most recent ones
-        in the App Store to collect insight on what users greatly care about,
-        as well as what aspects they like and those they find problematic.
-        Here’s what I found:
-       </p>
-      <img src="images/LAFitness/membership-reviews.png" width=100% style="margin-top: 20px; margin-bottom: 30px">
-      <p>Front desk check-in was the prominent topic amongst the reviews, as
-        most people use the app to access their digital membership card so they
-        don’t have to carry the physical one. However many pointed out the
-        inconvenience of having to load the slow LA Fitness app to access this
-        card when other companies let you add membership cards to Apple Wallet,
-        which is faster and easier to access.
-      </p>
-      <img src="images/LAFitness/misc-reviews.png" width=100% style="margin-top: 20px; margin-bottom: 30px">
-      <p>Other aspects I plan to explore are schedules and reservations since
-        they were also mentioned a fair amount. From the reviews I read, their
-        main pain point is inefficiency! For example, the app doesn’t allow users
-        to set a home club, so every time they want to view their club’s schedule,
-        they have to search for the club first. (<i>Note—I can’t really explore personal
-        training because it’s not included in my membership!</i>)<br><br>
+      <p class="header">RESEARCH: MAJOR INSIGHTS</p>
+      <p>I collected insight on how LA Fitness members use and regard the app by
+        interviewing 3 gym members and reading 100+ of the most recent reviews
+        in the App Store. Here's what I found:
+      </p><br>
 
-        Based on these insights, I plan to <b style="font-weight: 400">focus on improving the home page’s
-        layout and streamlining how the membership card and class schedules are accessed.</b>
-      </p>
+      <b>Too many steps required to access the digital membership card for front
+         desk check-in</b>
+      <blockquote>
+        <p style="line-height: 1.2">
+          <i style="font-size: 15px;">"I feel like the app should provide an
+          option for the digital membership tag to be added to the Apple Wallet
+          so you can double tap the button, scan and your on your way."</i><br><br>
+          <i style="font-size: 15px;">"The only reason I use the app is to pull
+          up my membership barcode."</i>
+        </p>
+      </blockquote>
 
-
-      <p class="header">APP CRITIQUE</p>
-      <p>Now that I had my focus, I did a deep dive into the app where I
-        discovered key insights for the home page, membership card, check-in history and class schedules:
-       </p>
+      <b>Check-in tracker hidden under My Account</b>
+      <blockquote>
+        <p style="line-height: 1.2">
+          <i style="font-size: 15px;">"It takes too many clicks to get to your
+          check-in history..."</i><br><br>
+          <i style="font-size: 15px;">"Need the “Check In” view that tracks visits
+            to work, for my employer to verify visits."</i>
+        </p>
+      </blockquote>
+      <!-- <img src="images/LAFitness/checkinhistory.png" width=100% style="margin-top: -20px; margin-bottom: 20px"></img> -->
 
 
-      <p class="header" style="margin-top: 50px">—HOME PAGE</p>
+      <b>Home page is cluttered and overwhelming</b>
+      <blockquote>
+        <p style="line-height: 1.2">
+          <i style="font-size: 15px;">"There are so many menus, subcategories
+            that can all be merged and simplified."</i><br><br>
+          <i style="font-size: 15px;">"The clunky buttons overcrowd the home screen."</i>
+        </p>
+      </blockquote>
+
+
+      <b>Accessing home club’s information (i.e. schedules, hours of operation)
+        is inefficient</b>
+      <blockquote>
+        <p style="line-height: 1.2">
+          <i style="font-size: 15px;">"Getting to schedule for my club is tedious…
+            Every time it insists on searching for all clubs “near” me, and making
+            me choose which one I want to see a schedule for."</i><br><br>
+          <i style="font-size: 15px;">"Can we add a function on the front homepage
+            with the Hours of Operation for the users Home Club?"</i>
+        </p>
+      </blockquote>
+      <!-- <img src="images/LAFitness/class-schedules.png" width=100% style="margin-bottom: 30px"></img> -->
+
+
+      <b>Searching for classes is tedious</b>
+      <blockquote>
+        <p style="line-height: 1.2">
+          <i style="font-size: 15px;">"I wish we could look at multiple class
+            types at the same time."</i><br><br>
+          <i style="font-size: 15px;">"Why can't I search a specific class type
+            for a specific club?! Why is it only one or the other??!!!"</i>
+        </p>
+      </blockquote>
+
+
+
+      <b>Outdated UI</b>
+      <blockquote>
+        <p style="line-height: 1.2">
+          <i style="font-size: 15px;">"The app isn’t up to date with the new modern
+            interfaces and just isn’t aesthetically pleasing."</i><br><br>
+          <i style="font-size: 15px;">"Congratulations! This looks like a hideous
+            website from the 90s."</i>
+        </p>
+      </blockquote>
+
+
+
+      <!-- <p class="header">—HOME PAGE</p>
       <p>Users have 11 different options when on the home page, however based on
         my research and personal experience, most of these go unused. Most gym
         members mainly use the app for front desk check-in with their membership
         card and to browse class schedules and make reservations. The current
         design doesn’t highlight these main features.
       </p>
-      <img src="images/LAFitness/home-page-notes.png" width=100% style="margin-top: 20px">
+      <img src="images/LAFitness/home-page-notes.png" width=100% style="margin-top: 20px; margin-bottom: 30px"> -->
 
 
-      <p class="header" style="margin-top: 50px">—CHECK-IN HISTORY</p>
-      <p>Navigating to the check-in history proved to be a pain point. As there’s no
-        access point from the home screen, I looked under membership card since
-        that’s used for check-in, but it wasn’t there either! It turns out that
-        check-in history is in a tab under My Account. If I hadn’t been actively
-        searching for this feature, I probably never would have found it!
-      </p>
-      <center>
-          <img class="gifs" src="gifs/check-in-history.gif" style="max-width: 275px; margin-top: 40px"><br>
-          <p class="img-caption">Check-In History is hidden under My Account</p>
-      </center>
 
-      <p class="header" style="margin-top: 50px">—CLASS SCHEDULES</p>
-      <p>When looking for a class, users can either search by location or type.
-         If users search by location, they choose a club from a list of nearby
-         ones and can view a schedule of times for all its different classes. If users search by
-         type, they select their desired class and can view a schedule of all times
-         that class type is available from any location. Note that you can never
-         restrict your search to both a location and a class type, as well as
-         choose more than one location or more than one class type.
-      </p>
-      <div class="row" style="margin-top: 40px">
-        <div class="col-sm-6" style="margin-bottom: 10px">
-          <img class="gifs" src="gifs/find-class-nearby.gif" style="max-width: 275px"><br>
-          <p class="img-caption">Finding Classes Nearby</p>
-        </div>
-        <div class="col-sm-6" style="margin-bottom: 10px">
-          <img class="gifs" src="gifs/find-class-by-type.gif" style="max-width: 275px"><br>
-          <p class="img-caption">Finding Classes by Type</p>
-        </div>
-      </div>
-
-      <p class="header" style="margin-top: 50px">—FIND CLUB</p>
-      <p>Lastly I visited the find club feature wanting to know how it's different
-        from finding classes nearby. I discovered that the 2 features are very similar—both
-        providing users a list and map view of nearby clubs. The only difference
-        is that you can only view classes with the finding classes nearby feature,
-        while you can view club details, hours, and trainers in addition to classes with the find club feature.
-      </p>
-      <center>
-          <img class="gifs" src="gifs/find-club.gif" style="max-width: 275px; margin-top: 40px"><br>
-          <p class="img-caption">Finding a club</p>
-      </center>
-
-
-      <p class="header">IDEATION + ITERATION</p>
+      <!-- <p class="header">IDEATION + ITERATION</p>
       <p>Process details and images will be uploaded soon!
-       </p>
+       </p> -->
 
 
 
-       <p class="header">HIGH FIDELITY DESIGN</p>
-       <p>Design explanation will be uploaded soon!
-        </p>
-       <p class="header" style="margin-top: 50px">—HOME PAGE</p>
+       <p class="header">REDESIGN: HIGH FIDELITY SCREENS</p>
+       <p>After reviewing my paper prototypes, I created high fidelity screens
+         in Figma. You can click through the prototype
+         <b><a href="https://www.figma.com/proto/rY68XZKwSGy0co5Mel37iv/LA-FITNESS?node-id=27%3A1&viewport=293%2C159%2C0.2355652004480362&scaling=scale-down" target="_blank">here</a></b></p>
+
+
+
+       <!--HOME PAGE-->
+       <p class="header" style="margin-top: 50px; font-size: 20px;">01. home page</p>
+       <p><b>Problem</b>—Disorganized and cluttered. Doesn’t empower users to efficiently
+         navigate the app.</p>
+       <b>Redesign</b>
+       <ul>
+         <li>
+           <p><b style="font-weight: 500">Header</b>—<i>Account Profile</i> and <i>Membership Card</i> buttons placed
+             in the upper corners of the header for better discoverability.
+             <i>Messages</i>, <i>Check-In History</i>, <i>Settings</i>, and
+             <i>Contact Us</i> buttons minimized and added to the bottom of the
+             header because they’re important features but secondary to the
+             <i>Account Profile</i> and <i>Membership Card</i> features.</p>
+         </li>
+         <li>
+           <p><b style="font-weight: 500">Home Club Info</b>—Home club name, hours, and shortcuts to its
+             class schedules, details, and trainers added to the home page to
+             streamline how frequently sought out information is accessed. New
+             feature that tells users if the gym is currently busy or not busy,
+             so they can factor that into their decisions.</p>
+         </li>
+         <li>
+           <p><b style="font-weight: 500">Favorites</b>—Expanded the <i>Favorites</i> button to improve
+             its discoverability and provide shortcuts to your favorite clubs,
+             classes, and instructors.</p>
+         </li>
+         <li>
+           <p><b style="font-weight: 500">Additional Buttons</b>—Button icons enlarged, colored, and
+             centered to improve aesthetics.</p>
+         </li>
+         <li>
+           <p><b style="font-weight: 500">Slider</b>—Promotional items moved below the buttons and placed
+             in a slider so LA Fitness can promote multiple things (i.e. podcasts, blogs).</p>
+         </li>
+       </ul>
        <img src="images/LAFitness/home-redesign.png" width=100% style="margin-top: 20px; margin-bottom: 30px">
-      <p class="header" style="margin-top: 50px">—MEMBERSHIP</p>
-       <center>
-           <img class="gifs" src="gifs/membership-redesign.gif" style="max-width: 275px; margin-top: 40px"><br>
-       </center>
-      <p class="header" style="margin-top: 50px">—FAVORITES</p>
-       <center>
-           <img class="gifs" src="gifs/favorites-redesign.gif" style="max-width: 275px; margin-top: 40px"><br>
-       </center>
-       <p class="header" style="margin-top: 50px">—FIND CLASSES</p>
-       <center>
-           <img class="gifs" src="gifs/classes-redesign.gif" style="max-width: 275px; margin-top: 40px"><br>
-       </center>
-       <p class="header" style="margin-top: 50px">—FIND CLUB</p>
-       <center>
-           <img class="gifs" src="gifs/club-redesign.gif" style="max-width: 275px; margin-top: 40px"><br>
-       </center>
+
+
+
+      <!--CHECK-IN HISTORY-->
+      <p class="header" style="margin-top: 50px; font-size: 20px;">02. check-in history</p>
+      <p><b>Problem</b>—Lack of discoverability for the
+        <i>Check-In History</i> feature because it’s hidden under <i>Account Profile</i>.</p>
+      <p><b>Redesign</b>—Placed a <i>Check-In History</i> button on the home
+        page's header for easier accessibility.</p>
+      <br><br>
+        <div class="row">
+          <div class="col-sm-6" style="margin-bottom: 10px">
+            <p class="gif-caption">Current Design</p>
+            <img class="gifs" src="gifs/checkin-current.gif" style="max-width: 275px"><br>
+          </div>
+          <div class="col-sm-6" style="margin-bottom: 10px">
+            <p class="gif-caption">Redesign</p>
+            <img class="gifs" src="gifs/checkin-redesign.gif" style="max-width: 275px"><br>
+          </div>
+        </div>
+
+
+      <!--FAVORITES-->
+      <p class="header" style="margin-top: 50px; font-size: 20px;">03. favorites</p>
+      <p><b>Problem</b>—Bottom navigation bar is overlooked. Lists are text heavy
+        and hard to read.</p>
+      <p><b>Redesign</b>—Navigation bar moved to the top to make it more noticeable.
+        Improve readability for the lists by removing unnecessary text and placing
+        list items into blocks.</p>
+      <br><br>
+        <div class="row">
+          <div class="col-sm-6" style="margin-bottom: 10px">
+            <p class="gif-caption">Current Design</p>
+            <img class="gifs" src="gifs/favorites-current.gif" style="max-width: 275px"><br>
+          </div>
+          <div class="col-sm-6" style="margin-bottom: 10px">
+            <p class="gif-caption">Redesign</p>
+            <img class="gifs" src="gifs/favorites-redesign.gif" style="max-width: 275px"><br>
+          </div>
+        </div>
+
+
+
+      <!--FIND CLASSES-->
+      <p class="header" style="margin-top: 50px; font-size: 20px;">04. find classes</p>
+      <p><b>Problem</b>—Filter options for finding classes is limited to one
+        location or one class type. List of classes is difficult to read.</p>
+      <p><b>Redesign</b>—Allow users to trigger multiple filters (e.g. location,
+        class type, time) at once to optimize how one finds classes. Improve list's
+        readability by enlarging the class name, day, and time.
+        <i>Reserve</i> button added to the list for efficiency.</p>
+      <br><br>
+        <div class="row">
+          <div class="col-sm-4" style="margin-bottom: 10px">
+            <p class="gif-caption">Current Design: Near Me</p>
+            <img class="gifs" src="gifs/classes-nearby.gif" style="max-width: 275px"><br>
+          </div>
+          <div class="col-sm-4" style="margin-bottom: 10px">
+            <p class="gif-caption">Current Design: By Type</p>
+            <img class="gifs" src="gifs/classes-type.gif" style="max-width: 275px"><br>
+          </div>
+          <div class="col-sm-4" style="margin-bottom: 10px">
+            <p class="gif-caption">Redesign</p>
+            <img class="gifs" src="gifs/classes-redesign.gif" style="max-width: 275px"><br>
+          </div>
+        </div>
+
+
+
+      <!--FIND CLUBS-->
+      <p class="header" style="margin-top: 50px; font-size: 20px;">05. find clubs</p>
+      <p><b>Problem</b>—<i>Find Club</i> feature has 3 different pages: search,
+        map, list. Search bar is only available on feature’s search page. List
+        of clubs appears on both the list page and under the search bar on the
+        search page leading to lots of confusion.</p>
+      <p><b>Redesign</b>—Search bar is always available so users can freely change
+        the search query. Navigation bar added under the search bar so users can
+        easily switch between the list and map.</p>
+      <br><br>
+        <div class="row">
+          <div class="col-sm-6" style="margin-bottom: 10px">
+            <p class="gif-caption">Current Design</p>
+            <img class="gifs" src="gifs/club-current.gif" style="max-width: 275px"><br>
+          </div>
+          <div class="col-sm-6" style="margin-bottom: 10px">
+            <p class="gif-caption">Redesign</p>
+            <img class="gifs" src="gifs/club-redesign.gif" style="max-width: 275px"><br>
+          </div>
+        </div>
+
+
 
     </div><!--end of padding-->
   </div><!--end of container-->
