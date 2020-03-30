@@ -45,10 +45,10 @@
 
   <div class="container">
     <div class="padding">
-      <div class="case-title"><p>HAPPY HOUSE</p></div>
-      <p class="case-info">—Mobile App that makes living with roommates easy</p>
+      <div class="case-title"><p>happyhouse</p></div>
+      <p class="case-info">—Mobile app that makes living with roommates easy</p>
 
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-sm-6">
           <p class="subheader" style="margin-top: 30px;">OVERVIEW</p>
           <p>Happy House is a mobile app designed to mitigate roommate conflicts
@@ -66,27 +66,73 @@
           <li>High fidelity prototype created in Figma
           </ul>
         </div>
-      </div>
+      </div> -->
 
       <p class="header">PROBLEM</p>
       <p>Tension between roommates builds up when trash isn't taken out, dishes
          aren't cleaned, rent doesn't get payed, etc. These issues are due to
-         poor household management stemming from miscommunication. How might we
-         be able to improve communication between roommates?
+         poor household management stemming from miscommunication. How can we
+         improve communication between roommates?
       </p>
 
       <p class="header">USER RESEARCH</p>
-      <p>Each team member interviewed a UCSD student about their housing situation,
-         management and organization styles, and memorable/significant roommate stories.
+      <p>Each team member did an in-depth interview with a UCSD student about their
+         housing situation, management and organization styles, and
+         memorable/significant roommate stories they felt comfortable sharing. We chose these particular
+         individuals to represent the diversity of housing situations—rooming with
+         males vs females, the number of people you live with, and living in an
+         apartment vs a house (note: the names were changed for privacy).
        </p>
-      <p>Knowing that (not doing) chores is a common root of roommate conflicts,
-         we analyzed how people typically distribute chores and were able to
-         identify two distinct styles with their main difference being how chores are
+
+       <img src="images/HappyHouse/interview-people.png" width=100% style="margin-top: 30px; margin-bottom: 30px">
+
+       <p>Our interview questions:</p>
+       <ul>
+         <li>
+           <p>Which chores are shared by everybody? Which chores are your own responsibility?</p>
+         </li>
+         <li>
+           <p>How is it decided who does what chores? And when? Which chores do you not like to do?</p>
+         </li>
+         <li>
+           <p>How do you typically communicate with your roommates?</p>
+         </li>
+         <li>
+           <p>How do you pay your bills (rent, water, electricity, wifi)?</p>
+         </li>
+         <li>
+           <p>Do you have any house rules? If so, what are they?</p>
+         </li>
+         <li>
+           <p>What has your experience been living with your roommates?</p>
+         </li>
+       </ul>
+
+      <p class="header">MAJOR INSIGHTS</p>
+
+      <img src="images/HappyHouse/shared-chores.png" class="research-pic" style="margin-top: 30px;">
+      <p><b>01. SHARED CHORES</b><br>We found that shared chores generally involve the communal living spaces,
+         such as the kitchen and living room. So chores like taking out the trash
+         and recycling, cleaning up the kitchen, and vacuuming are typically
+         divided amongst roommates. The logic here is that since the space is shared
+         its upkeep is shared as well.</p>
+
+      <p><b>02. DISTRIBUTING RESPONSIBILITY</b><br>We identified two distinct styles for distributing chores with their
+         main difference being how chores are
          assigned (see figure below). Each come with their own set of problems,
-         but both heavily rely on an expectation that people are responsible and
+         but both heavily rely on an <i>expectation</i> that people are responsible and
          remember to do their chores. However there is no
          guarantee that people will contribute their fair share, which is why
          a system of reminders and way of holding people accountable is needed.</p>
+
+         <!-- <p>Knowing that (not doing) chores is a common root of roommate conflicts,
+            we analyzed how people typically distribute chores and were able to
+            identify two distinct styles with their main difference being how chores are
+            assigned (see figure below). Each come with their own set of problems,
+            but both heavily rely on an expectation that people are responsible and
+            remember to do their chores. However there is no
+            guarantee that people will contribute their fair share, which is why
+            a system of reminders and way of holding people accountable is needed.</p> -->
 
       <img src="images/HappyHouse/charts.png" class="research-pic" style="margin-top: 30px;">
       <p class="img-caption">ways of distributing chores</p><br>
@@ -104,6 +150,10 @@
          observed.</p>
 
       <img src="images/HappyHouse/observations-example.png" class="research-pic" style="margin-top: 30px;">
+
+      <img src="images/HappyHouse/needfinding.png" width=100% style="margin-top: 30px;">
+      <p class="img-caption">writing down <b>user needs</b> found from our interviews
+        (and putting them on the floor because they wouldn't stick to the wall lol)</p><br>
 
       <p class="header">STORYBOARDS</p>
       <p>We constructed storyboards to help us come up with ideas on where we can
@@ -241,6 +291,26 @@
            significant changes to our notification system, task creation functionality,
            and wording. These changes provide clarity for our user making their interactions
            with our app easier.</p>
+
+         <!--HOME SCREEN-->
+         <p class="header" style="margin-top: 50px; font-size: 20px;">01. home screen</p>
+         <p><b>Original</b>—During our user testing, many people mentioned wanting
+            more updates, but failed to navigate to the <i>notifications</i> page
+            which had these updates.</p>
+         <p><b>Final</b>—Taking this into consideration, we removed the <i>notifications</i>
+            page and put important updates on the <i>home</i> page itself so that
+            users can see these notifications right when they open the app.</p>
+         <br><br>
+           <div class="row">
+             <div class="col-sm-6" style="margin-bottom: 10px">
+               <p class="gif-caption">Original</p>
+               <img class="gifs" src="images/HappyHouse/home-proto.png" style="max-width: 275px"><br>
+             </div>
+             <div class="col-sm-6" style="margin-bottom: 10px">
+               <p class="gif-caption">Final</p>
+               <img class="gifs" src="images/HappyHouse/home-final.png" style="max-width: 275px"><br>
+             </div>
+           </div>
 
              <div id="myCarousel" class="carousel slide" data-ride="carousel">
                <!-- Indicators -->

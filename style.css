@@ -281,6 +281,16 @@ body, html {
   padding-left: 2px;
 }
 
+.dailyui {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+}
+#ui {
+  font-weight: 500;
+}
+
+
 
 
 /*general body styling*/
@@ -291,7 +301,8 @@ body {
   /*background-color: #99CED3; /*sea foam*/
   font-size: 15px;
   font-weight: 200;
-  color: #5F6366; /*granite gray*/
+  color: black;
+  /* color: #5F6366; /*granite gray*/
 }
 p {
   line-height: 1.6;
