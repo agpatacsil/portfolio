@@ -71,8 +71,9 @@ body, html {
 
 /*navigation menu - portfolio, resume, about*/
 .navbar-inverse .navbar-nav>li>a:link, .navbar-inverse .navbar-nav>li>a:visited {
-  color: #5F6366; /*granite gray*/
+  color: black; /*granite gray*/
   font-size: 18px;
+  font-weight: 500;
 }
 .navbar-inverse .navbar-nav>li>a:hover {
   color: #EDB5BF; /*cameo pink*/
@@ -80,6 +81,21 @@ body, html {
 
 .navbar-inverse .navbar-nav>li>a:active {
   color: #5F6366;
+}
+
+
+body > #header{position:fixed;}
+
+#header {
+    width: 100%;
+    position: fixed;
+    z-index:9000;
+    overflow: auto;
+    transition: all 0.15s linear;
+}
+
+#header.active {
+     box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
 
@@ -343,4 +359,9 @@ footer {
 h4 {
   /* font-family: sofia-pro; */
   font-family: avenir, Arial, sans-serif;
+}
+.intro{
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 1;
 }
