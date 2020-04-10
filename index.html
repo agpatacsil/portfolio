@@ -8,32 +8,15 @@
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="images/favicon.jpg">
   <link rel="stylesheet" href="https://use.typekit.net/eep3vgi.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
-  <!-- <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="index.html" style="font-family: sofia-pro; font-weight: 500">allison patacsil</a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="index.html#project-scroll" style="color: #EDB5BF;">projects</a></li>
-          <li><a href="https://drive.google.com/file/d/1FjzAxS41g2qMiZyI_ezROL6Q82D_xNoN/view?usp=sharing" target="_blank">resume</a></li>
-          <li><a href="about.html">about</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav> -->
   <nav class="navbar navbar-inverse navbar-fixed-top" id="header">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -44,7 +27,7 @@
         </button>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav navbar-left">
-            <li><a href="index.html#project-scroll" style="color: #EDB5BF;">projects</a></li>
+            <li><a href="index.html" style="color: #EDB5BF;">projects</a></li>
             <li><a href="https://drive.google.com/file/d/1FjzAxS41g2qMiZyI_ezROL6Q82D_xNoN/view?usp=sharing" target="_blank">resume</a></li>
             <li><a href="about.html">about</a></li>
           </ul>
@@ -60,57 +43,36 @@
     </div>
   </nav>
   <div style="padding:40px;"></div>
-  <!-- <div style="margin-right: 300px; margin-left: 300px"> -->
-  <!-- <div style="margin-right: 10%; margin-left: 10%"> -->
-  <!-- <div class="container">
-    <div class="portfolio-padding">
-    <img src="images/home-collage.png" style="width:100%">
-    <b style="font-size: 36px">allison patacsil</b>
-    <p style="font-size: 20px; font-weight: 300; margin-top: -10px">product designer & iced latte enthusiast</p>
-    <p>i’m a product designer who’s adventure started with napkin doodles in
-      restaurants that evolved into a love for tech and design :)<br><br>
 
-       this past summer, i worked with <b style="font-weight: 400">Girls Who Code</b> @ <b style="font-weight: 400">F5 Networks</b> teaching
-       high school girls computer science #girlpower. in fall 2020 i graduated
-       from uc san diego with a degree in <b style="font-weight: 400"><u>human computer interaction</u></b> from the
-       <b style="font-weight: 400">cognitive science department</b>, and i'm currently looking for full time product design positions.
-       check out some of my work!
-
-    </p>
-  </div>
-  </div> -->
-  <br><br><br>
+  <br><br><br><br><br>
   <div class="container">
     <div class="portfolio-padding">
     <div class="row">
       <div class="col-sm-4">
-        <div class="card">
+        <div class="card" data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine" data-aos-duration="1000">
           <img src="images/allison-icon.png" style="width: 100%">
         </div>
       </div>
-      <div class="col-sm-7">
+      <div class="col-sm-7" data-aos="fade-left" data-aos-offset="500" data-aos-easing="ease-in-sine" data-aos-duration="1000" data-aos-delay="500">
         <br>
         <p class="intro" class="animate-right">hello! i'm <b style="color: #86B3D1">allison</b> —</p>
         <p style="font-size: 30px; font-weight: 100;"> a product designer & iced latte enthusiast</p>
-        <br>
-        <br>
+        <br><br>
         <p style="font-size: 18px">I'm passionate about designing <b>meaningful experiences</b> that promote <b>inclusivity</b> and <b>build communities</b>.</p>
-
-
       </div>
       </div>
     </div>
   </div>
-  </div>
+
   <div id="project-scroll"></div>
-  <div style="text-align: center; margin-top: 100px;margin-bottom: 30px">
+  <div style="text-align: center; margin-top: 100px;margin-bottom: 30px" data-aos="fade-up" data-aos-duration="300" data-aos-delay="1500">
     <b style="font-size: 28px">projects</b>
   </div>
 
 
 <div class="container">
   <div class="portfolio-padding">
-    <div class="row">
+    <div class="row" data-aos="fade-up" data-aos-duration="500" data-aos-delay="1500">
       <div class="col-sm-6">
         <div class="card">
           <a href="disneyland.html"><img class="card-img-top" src="images/Disney/disney-card.png" alt="Card image"></a>
@@ -122,7 +84,7 @@
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="row" data-aos="fade-up" data-aos-duration="500">
       <div class="col-sm-6">
         <div class="card">
           <a href="diabetes.html"><img class="card-img-top" src="images/diabetes/dexcom-card.png" alt="Card image"></a>
@@ -134,54 +96,6 @@
         </div>
       </div>
     </div>
-    <!--<div class="row">
-      <div class="col-sm-6">
-        <div class="card">
-          <img class="card-img-top" src="images/coco-preview.jpeg" alt="Card image">
-          <div class="card-body">
-            <h4 class="card-title">Coco</h4>
-            <p class="card-text-info">Case Study - Spring 2019</p>
-            <p class="card-text">Bridging the gap in communication between children and their therapists</p>
-            <div style="text-align:center;"><a href="coco.html" class="portfolio-btn">Read Case Study</a></div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="card">
-          <img class="card-img-top" src="images/happyhouse-preview.jpeg" alt="Card image">
-          <div class="card-body">
-            <h4 class="card-title">Happy House</h4>
-            <p class="card-text-info">Case Study - Fall 2018</p>
-            <p class="card-text">Creating a system of communication that improves household management</p>
-            <div style="text-align:center;"><a href="happy-house.html" class="portfolio-btn">Read Case Study</a></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="card">
-          <img class="card-img-top" src="images/rec-preview.jpeg" alt="Card image">
-          <div class="card-body">
-            <h4 class="card-title">UCSD Rec Redesign</h4>
-            <p class="card-text-info">Case Study - Winter 2018</p>
-            <p class="card-text">Redesigning the recreation website based on user interviews from UCSD students.</p>
-            <div style="text-align:center;"><a class="portfolio-btn">Coming Soon</a></div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="card">
-          <img class="card-img-top" src="images/pepperspray-preview.jpeg" alt="Card image">
-          <div class="card-body">
-            <h4 class="card-title">Pepper Spray</h4>
-            <p class="card-text-info">Case Study - Winter 2018</p>
-            <p class="card-text">Designing an improved pepper spray bottle based on user interviews from UCSD students.</p>
-            <div style="text-align:center;"><a class="portfolio-btn">Coming Soon</a></div>
-          </div>
-        </div>
-      </div>
-    </div>-->
   </div>
 </div>
 <footer>
@@ -196,5 +110,33 @@
   <br>
   <br>
 </footer>
+<script>
+
+
+  // You can also pass an optional settings object
+  // below listed default settings
+  AOS.init({
+    // Global settings:
+    disable: 'phone', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+    startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+    initClassName: 'aos-init', // class applied after initialization
+    animatedClassName: 'aos-animate', // class applied on animation
+    useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+    disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+    debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+    throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+    offset: 120, // offset (in px) from the original trigger point
+    delay: 0, // values from 0 to 3000, with step 50ms
+    duration: 400, // values from 0 to 3000, with step 50ms
+    easing: 'ease', // default easing for AOS animations
+    once: false, // whether animation should happen only once - while scrolling down
+    mirror: false, // whether elements should animate out while scrolling past them
+    anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+  });
+</script>
 </body>
 </html>
