@@ -2,10 +2,13 @@ body, html {
   height: 100%;
 }
 
-.parallax-window {
+
+
+/* .parallax-window {
     height: 100%;
     background: transparent;
-}
+} */
+
 
 
 /*navigation menu*/
@@ -19,6 +22,7 @@ body, html {
   margin-right: 15px;
   margin-left: 15px;
 }
+
 
 
 /*navigation menu toggle bar*/
@@ -42,6 +46,7 @@ body, html {
 }
 
 
+
 /*navigation menu - allison patacsil*/
 .navbar-inverse .navbar-brand {
   color: #99CED3; /*sea foam*/
@@ -59,15 +64,7 @@ body, html {
   color: #EDB5BF; /*cameo pink*/
 }
 
-/* .navbar .navbar-nav {
-  display: inline-block;
-  float: none;
-  vertical-align: top;
-}
 
-.navbar .navbar-collapse {
-  text-align: center;
-} */
 
 /*navigation menu - portfolio, resume, about*/
 .navbar-inverse .navbar-nav>li>a:link, .navbar-inverse .navbar-nav>li>a:visited {
@@ -84,6 +81,8 @@ body, html {
 }
 
 
+
+/* navigation bar drop shadow */
 body > #header{position:fixed;}
 
 #header {
@@ -99,6 +98,7 @@ body > #header{position:fixed;}
 }
 
 
+
 /*portfolio page*/
 .portfolio-padding {
   padding-right: 50px;
@@ -110,6 +110,7 @@ body > #header{position:fixed;}
   font-size: 30px;
   font-family: sofia-pro;
 }
+
 
 
 /*portfolio cards*/
@@ -251,6 +252,7 @@ body > #header{position:fixed;}
 }
 
 
+
 /*slide show*/
 .carousel-indicators li{
   background-color: #B3DE81;
@@ -364,4 +366,50 @@ h4 {
   font-size: 56px;
   font-weight: 600;
   line-height: 1;
+}
+
+
+
+
+
+
+.info-cards {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #2F2F30;
+  border-radius: 10px;
+}
+
+.info-cards:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 28px;
+  font-weight: 500;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
