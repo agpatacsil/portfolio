@@ -88,7 +88,7 @@ body > #header{position:fixed;}
 #header {
     width: 100%;
     position: fixed;
-    z-index:9000;
+    z-index:100;
     overflow: auto;
     transition: all 0.15s linear;
 }
@@ -412,4 +412,17 @@ h4 {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.daily {
+  background-color: white;
+  border: none;
+}
+
+button {
+  padding-bottom: 10px;
+}
+
+button:focus {
+  outline:0;
 }

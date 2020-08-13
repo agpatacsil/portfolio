@@ -9,12 +9,27 @@
   <link rel="icon" href="images/favicon.jpg">
   <link rel="stylesheet" href="https://use.typekit.net/eep3vgi.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="parallax.js-1.5.0/parallax.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
   <script src="script.js"></script>
+  <script>
+  $(document).ready(function(){
+    function alignModal(){
+        var modalDialog = $(this).find(".modal-dialog");
+        /* Applying the top margin on modal dialog to align it vertically center */
+        modalDialog.css("margin-top", Math.max(0, ($(window).height() - modalDialog.height()) / 2));
+    }
+    // Align modal when it is displayed
+    $(".modal").on("shown.bs.modal", alignModal);
+
+    // Align modal when user resize the window
+    $(window).on("resize", function(){
+        $(".modal:visible").each(alignModal);
+    });
+});
+  </script>
 </head>
 <body>
 
@@ -80,296 +95,1318 @@
              something every day.
            </p>
         </li>
-      </ul>
+      </ul></div><!--end of padding-->
       <br><br><br><br>
 
 
-      <center>
-        <p class="dailyui">001 Sign Up <b style="font-weight: 100; font-size: 14px">(March 23, 2020)</b></p>
-        <img src="images/dailyui/day1.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">002 Credit Card Checkout <b style="font-weight: 100; font-size: 14px">(March 24, 2020)</b></p>
-        <img src="images/dailyui/day2.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">003 Landing Page <b style="font-weight: 100; font-size: 14px">(March 25, 2020)</b></p>
-        <img src="images/dailyui/day3.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">004 Calculator <b style="font-weight: 100; font-size: 14px">(March 26, 2020)</b></p>
-        <img src="images/dailyui/day4.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">005 App Icon <b style="font-weight: 100; font-size: 14px">(March 27, 2020)</b></p>
-        <img src="images/dailyui/day5.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">006 Profile <b style="font-weight: 100; font-size: 14px">(March 30, 2020)</b></p>
-        <img src="images/dailyui/day6.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">007 Settings <b style="font-weight: 100; font-size: 14px">(Mar 31, 2020)</b></p>
-        <img src="images/dailyui/day7.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">008 404 Error <b style="font-weight: 100; font-size: 14px">(April 1, 2020)</b></p>
-        <img src="images/dailyui/day8.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">009 Music Player <b style="font-weight: 100; font-size: 14px">(April 2, 2020)</b></p>
-        <img src="images/dailyui/day9.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">010 Social Share <b style="font-weight: 100; font-size: 14px">(April 3, 2020)</b></p>
-        <img src="images/dailyui/day10.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">011 Flash Message <b style="font-weight: 100; font-size: 14px">(April 6, 2020)</b></p>
-        <img src="images/dailyui/day11.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">012 E-Commerce Shop (Single Item) <b style="font-weight: 100; font-size: 14px">(April 7, 2020)</b></p>
-        <img src="images/dailyui/day12.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">013 Direct Messaging <b style="font-weight: 100; font-size: 14px">(April 8, 2020)</b></p>
-        <img src="images/dailyui/day13.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">014 Countdown Timer <b style="font-weight: 100; font-size: 14px">(April 9, 2020)</b></p>
-        <img src="images/dailyui/day14.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">015 On/Off Switch <b style="font-weight: 100; font-size: 14px">(April 10, 2020)</b></p>
-        <img src="images/dailyui/day15.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">016 Pop-Up/Overlay <b style="font-weight: 100; font-size: 14px">(April 13, 2020)</b></p>
-        <img src="images/dailyui/day16.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">017 Email Receipt <b style="font-weight: 100; font-size: 14px">(April 14, 2020)</b></p>
-        <img src="images/dailyui/day17.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">018 Analytics Chart <b style="font-weight: 100; font-size: 14px">(April 15, 2020)</b></p>
-        <img src="images/dailyui/day18.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">019 Leaderboard <b style="font-weight: 100; font-size: 14px">(April 16, 2020)</b></p>
-        <img src="images/dailyui/day19.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">020 Location Tracker <b style="font-weight: 100; font-size: 14px">(April 17, 2020)</b></p>
-        <img src="images/dailyui/day20.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">021 Home Monitoring Dashboard <b style="font-weight: 100; font-size: 14px">(April 20, 2020)</b></p>
-        <img src="images/dailyui/day21.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">022 Search <b style="font-weight: 100; font-size: 14px">(April 21, 2020)</b></p>
-        <img src="images/dailyui/day22.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">023 Onboarding <b style="font-weight: 100; font-size: 14px">(April 22, 2020)</b></p>
-        <img src="images/dailyui/day23.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">024 Boarding Pass <b style="font-weight: 100; font-size: 14px">(April 23, 2020)</b></p>
-        <img src="images/dailyui/day24.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">025 TV App <b style="font-weight: 100; font-size: 14px">(April 24, 2020)</b></p>
-        <img src="images/dailyui/day25.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">026 Subscribe <b style="font-weight: 100; font-size: 14px">(April 27, 2020)</b></p>
-        <img src="images/dailyui/day26.png" style="width:100%">
-        <br><br><br><br>
+      <!-- Image: Day 1-4 -->
+      <div class="row">
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day1" class="daily"><img src="images/dailyui/day1.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day2" class="daily"><img src="images/dailyui/day2.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day3" class="daily"><img src="images/dailyui/day3.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day4" class="daily"><img src="images/dailyui/day4.png" style="width:100%"></button>
+        </div>
+      </div>
+
+      <!-- Modal: Day 1-4 -->
+      <div class="modal fade" id="day1" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 001 Sign Up</b><br><br></center>
+              <img src="images/dailyui/day1.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 002 Credit Card Checkout</b><br><br></center>
+              <img src="images/dailyui/day2.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day3" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 003 Landing Page</b><br><br></center>
+              <img src="images/dailyui/day3.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day4" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 004 Calculator</b><br><br></center>
+              <img src="images/dailyui/day4.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Image: Day 5-8 -->
+      <div class="row">
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day5" class="daily"><img src="images/dailyui/day5.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day6" class="daily"><img src="images/dailyui/day6.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day7" class="daily"><img src="images/dailyui/day7.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day8" class="daily"><img src="images/dailyui/day8.png" style="width:100%"></button>
+        </div>
+      </div>
+
+      <!-- Modal: Day 5-8 -->
+      <div class="modal fade" id="day5" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 005 App Icon</b><br><br></center>
+              <img src="images/dailyui/day5.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day6" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 006 Profile</b><br><br></center>
+              <img src="images/dailyui/day6.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day7" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 007 Settings</b><br><br></center>
+              <img src="images/dailyui/day7.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day8" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 008 404 Error</b><br><br></center>
+              <img src="images/dailyui/day8.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Image: Day 9-12 -->
+      <div class="row">
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day9" class="daily"><img src="images/dailyui/day9.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day10" class="daily"><img src="images/dailyui/day10.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day11" class="daily"><img src="images/dailyui/day11.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day12" class="daily"><img src="images/dailyui/day12.png" style="width:100%"></button>
+        </div>
+      </div>
+
+      <!-- Modal: Day 9-12 -->
+      <div class="modal fade" id="day9" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 009 Music Player</b><br><br></center>
+              <img src="images/dailyui/day9.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day10" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 010 Social Share</b><br><br></center>
+              <img src="images/dailyui/day10.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day11" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 011 Flash Message</b><br><br></center>
+              <img src="images/dailyui/day11.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day12" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 012 E-Commerce Shop (Single Item)</b><br><br></center>
+              <img src="images/dailyui/day12.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Image: Day 13-16 -->
+      <div class="row">
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day13" class="daily"><img src="images/dailyui/day13.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day14" class="daily"><img src="images/dailyui/day14.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day15" class="daily"><img src="images/dailyui/day15.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day16" class="daily"><img src="images/dailyui/day16.png" style="width:100%"></button>
+        </div>
+      </div>
+
+      <!-- Modal: Day 13-16 -->
+      <div class="modal fade" id="day13" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 013 Direct Messaging</b><br><br></center>
+              <img src="images/dailyui/day13.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day14" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 014 Countdown Timer</b><br><br></center>
+              <img src="images/dailyui/day14.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day15" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 015 On/Off Switch</b><br><br></center>
+              <img src="images/dailyui/day15.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day16" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 016 Pop-Up/Overlay</b><br><br></center>
+              <img src="images/dailyui/day16.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Image: Day 17-20 -->
+      <div class="row">
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day17" class="daily"><img src="images/dailyui/day17.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day18" class="daily"><img src="images/dailyui/day18.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day19" class="daily"><img src="images/dailyui/day19.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day20" class="daily"><img src="images/dailyui/day20.png" style="width:100%"></button>
+        </div>
+      </div>
+
+      <!-- Modal: Day 17-20 -->
+      <div class="modal fade" id="day17" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 017 Email Receipt</b><br><br></center>
+              <img src="images/dailyui/day17.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day18" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 018 Analytics Chart</b><br><br></center>
+              <img src="images/dailyui/day18.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day19" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 019 Leaderboard</b><br><br></center>
+              <img src="images/dailyui/day19.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day20" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 020 Location Tracker</b><br><br></center>
+              <img src="images/dailyui/day20.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Image: Day 21-24 -->
+      <div class="row">
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day21" class="daily"><img src="images/dailyui/day21.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day22" class="daily"><img src="images/dailyui/day22.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day23" class="daily"><img src="images/dailyui/day23.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day24" class="daily"><img src="images/dailyui/day24.png" style="width:100%"></button>
+        </div>
+      </div>
+
+      <!-- Modal: Day 21-24 -->
+      <div class="modal fade" id="day21" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 021 Home Monitoring Dashboard</b><br><br></center>
+              <img src="images/dailyui/day21.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day22" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 022 Search</b><br><br></center>
+              <img src="images/dailyui/day22.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day23" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 023 Onboarding</b><br><br></center>
+              <img src="images/dailyui/day23.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day24" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 024 Boarding Pass</b><br><br></center>
+              <img src="images/dailyui/day24.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Image: Day 25-28 -->
+      <div class="row">
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day25" class="daily"><img src="images/dailyui/day25.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day26" class="daily"><img src="images/dailyui/day26.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day27" class="daily"><img src="images/dailyui/day27.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day28" class="daily"><img src="images/dailyui/day28.png" style="width:100%"></button>
+        </div>
+      </div>
+
+      <!-- Modal: Day 25-28 -->
+      <div class="modal fade" id="day25" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 025 TV App</b><br><br></center>
+              <img src="images/dailyui/day25.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day26" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 026 Subscribe</b><br><br></center>
+              <img src="images/dailyui/day26.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day27" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 027 Dropdown</b><br><br></center>
+              <img src="images/dailyui/day27.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day28" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 028 Contact Us</b><br><br></center>
+              <img src="images/dailyui/day28.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Image: Day 29-32 -->
+      <div class="row">
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day29" class="daily"><img src="images/dailyui/day29.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day30" class="daily"><img src="images/dailyui/day30.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day31" class="daily"><img src="images/dailyui/day31.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day32" class="daily"><img src="images/dailyui/day32.png" style="width:100%"></button>
+        </div>
+      </div>
+
+      <!-- Modal: Day 29-32 -->
+      <div class="modal fade" id="day29" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 029 Map</b><br><br></center>
+              <img src="images/dailyui/day29.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day30" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 030 Pricing</b><br><br></center>
+              <img src="images/dailyui/day30.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day31" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 031 File Upload</b><br><br></center>
+              <img src="images/dailyui/day31.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day32" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 032 Crowdfunding Campaign</b><br><br></center>
+              <img src="images/dailyui/day32.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Image: Day 33-36 -->
+      <div class="row">
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day33" class="daily"><img src="images/dailyui/day33.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day34" class="daily"><img src="images/dailyui/day34.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day35" class="daily"><img src="images/dailyui/day35.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day36" class="daily"><img src="images/dailyui/day36.png" style="width:100%"></button>
+        </div>
+      </div>
+
+      <!-- Modal: Day 33-36 -->
+      <div class="modal fade" id="day33" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 033 Customize Product</b><br><br></center>
+              <img src="images/dailyui/day33.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day34" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 034 Car Interface</b><br><br></center>
+              <img src="images/dailyui/day34.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day35" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 035 Blog Post</b><br><br></center>
+              <img src="images/dailyui/day35.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day36" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 036 Special Offer</b><br><br></center>
+              <img src="images/dailyui/day36.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Image: Day 37-40 -->
+      <div class="row">
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day37" class="daily"><img src="images/dailyui/day37.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day38" class="daily"><img src="images/dailyui/day38.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day39" class="daily"><img src="images/dailyui/day39.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day40" class="daily"><img src="images/dailyui/day40.png" style="width:100%"></button>
+        </div>
+      </div>
+
+      <!-- Modal: Day 37-40 -->
+      <div class="modal fade" id="day37" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 037 Weather</b><br><br></center>
+              <img src="images/dailyui/day37.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day38" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 038 Calendar</b><br><br></center>
+              <img src="images/dailyui/day38.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day39" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 039 Testimonials</b><br><br></center>
+              <img src="images/dailyui/day39.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day40" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 040 Recipe</b><br><br></center>
+              <img src="images/dailyui/day40.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Image: Day 41-44 -->
+      <div class="row">
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day41" class="daily"><img src="images/dailyui/day41.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day42" class="daily"><img src="images/dailyui/day42.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day43" class="daily"><img src="images/dailyui/day43.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day44" class="daily"><img src="images/dailyui/day44.png" style="width:100%"></button>
+        </div>
+      </div>
+
+      <!-- Modal: Day 41-44 -->
+      <div class="modal fade" id="day41" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 041 Workout Tracker</b><br><br></center>
+              <img src="images/dailyui/day41.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day42" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 042 To Do List</b><br><br></center>
+              <img src="images/dailyui/day42.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day43" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 043 Food/Drink Menu</b><br><br></center>
+              <img src="images/dailyui/day43.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day44" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 044 Favorites</b><br><br></center>
+              <img src="images/dailyui/day44.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Image: Day 45-48 -->
+      <div class="row">
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day45" class="daily"><img src="images/dailyui/day45.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day46" class="daily"><img src="images/dailyui/day46.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day47" class="daily"><img src="images/dailyui/day47.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day48" class="daily"><img src="images/dailyui/day48.png" style="width:100%"></button>
+        </div>
+      </div>
+
+      <!-- Modal: Day 45-48 -->
+      <div class="modal fade" id="day45" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 045 Info Card</b><br><br></center>
+              <img src="images/dailyui/day45.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day46" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 046 Invoice</b><br><br></center>
+              <img src="images/dailyui/day46.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day47" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 047 Activity Feed</b><br><br></center>
+              <img src="images/dailyui/day47.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day48" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 048 Coming Soon</b><br><br></center>
+              <img src="images/dailyui/day48.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Image: Day 49-52 -->
+      <div class="row">
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day49" class="daily"><img src="images/dailyui/day49.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day50" class="daily"><img src="images/dailyui/day50.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day51" class="daily"><img src="images/dailyui/day51.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day52" class="daily"><img src="images/dailyui/day52.png" style="width:100%"></button>
+        </div>
+      </div>
+
+      <!-- Modal: Day 49-52 -->
+      <div class="modal fade" id="day49" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 049 Activity Feed</b><br><br></center>
+              <img src="images/dailyui/day49.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day50" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 050 Job Listing</b><br><br></center>
+              <img src="images/dailyui/day50.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day51" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 051 Press Page</b><br><br></center>
+              <img src="images/dailyui/day51.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day52" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 052 Logo Design</b><br><br></center>
+              <img src="images/dailyui/day52.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Image: Day 53-56 -->
+      <div class="row">
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day53" class="daily"><img src="images/dailyui/day53.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day54" class="daily"><img src="images/dailyui/day54.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day55" class="daily"><img src="images/dailyui/day55.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day56" class="daily"><img src="images/dailyui/day56.png" style="width:100%"></button>
+        </div>
+      </div>
+
+      <!-- Modal: Day 53-56 -->
+      <div class="modal fade" id="day53" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 053 Header Navigation</b><br><br></center>
+              <img src="images/dailyui/day53.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day54" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 054 Confirmation</b><br><br></center>
+              <img src="images/dailyui/day54.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day55" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 055 Icon Set</b><br><br></center>
+              <img src="images/dailyui/day55.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day56" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 056 Breadcrumbs</b><br><br></center>
+              <img src="images/dailyui/day56.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Image: Day 57-60 -->
+      <div class="row">
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day57" class="daily"><img src="images/dailyui/day57.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day58" class="daily"><img src="images/dailyui/day58.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day59" class="daily"><img src="images/dailyui/day59.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day60" class="daily"><img src="images/dailyui/day60.png" style="width:100%"></button>
+        </div>
+      </div>
+
+      <!-- Modal: Day 57-60 -->
+      <div class="modal fade" id="day57" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 057 Video Player</b><br><br></center>
+              <img src="images/dailyui/day57.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day58" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 058 Shopping Cart</b><br><br></center>
+              <img src="images/dailyui/day58.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day59" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 059 Background Pattern</b><br><br></center>
+              <img src="images/dailyui/day59.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day60" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 060 Color Picker</b><br><br></center>
+              <img src="images/dailyui/day60.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Image: Day 61-64 -->
+      <div class="row">
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day61" class="daily"><img src="images/dailyui/day61.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day62" class="daily"><img src="images/dailyui/day62.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day63" class="daily"><img src="images/dailyui/day63.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day64" class="daily"><img src="images/dailyui/day64.png" style="width:100%"></button>
+        </div>
+      </div>
+
+      <!-- Modal: Day 61-64 -->
+      <div class="modal fade" id="day61" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 061 Redeem Coupon</b><br><br></center>
+              <img src="images/dailyui/day61.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day62" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 062 Workout of the Day</b><br><br></center>
+              <img src="images/dailyui/day62.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day63" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 063 Best of 2018</b><br><br></center>
+              <img src="images/dailyui/day63.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day64" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 064 Select User Type</b><br><br></center>
+              <img src="images/dailyui/day64.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Image: Day 65-68 -->
+      <div class="row">
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day65" class="daily"><img src="images/dailyui/day65.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day66" class="daily"><img src="images/dailyui/day66.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day67" class="daily"><img src="images/dailyui/day67.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day68" class="daily"><img src="images/dailyui/day68.png" style="width:100%"></button>
+        </div>
+      </div>
+
+      <!-- Modal: Day 65-68 -->
+      <div class="modal fade" id="day65" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 065 Notes Widget</b><br><br></center>
+              <img src="images/dailyui/day65.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day66" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 066 Statistics</b><br><br></center>
+              <img src="images/dailyui/day66.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day67" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 067 Hotel Booking</b><br><br></center>
+              <img src="images/dailyui/day67.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day68" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 068 Flight Search</b><br><br></center>
+              <img src="images/dailyui/day68.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Image: Day 69-72 -->
+      <div class="row">
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day69" class="daily"><img src="images/dailyui/day69.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day70" class="daily"><img src="images/dailyui/day70.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day71" class="daily"><img src="images/dailyui/day71.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day72" class="daily"><img src="images/dailyui/day72.png" style="width:100%"></button>
+        </div>
+      </div>
+
+      <!-- Modal: Day 69-72 -->
+      <div class="modal fade" id="day69" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 069 Trending</b><br><br></center>
+              <img src="images/dailyui/day69.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day70" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 070 Event Listing</b><br><br></center>
+              <img src="images/dailyui/day70.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day71" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 071 Schedule</b><br><br></center>
+              <img src="images/dailyui/day71.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="day72" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 072 Image Slider</b><br><br></center>
+              <img src="images/dailyui/day72.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image: Day 69-72 -->
+      <div class="row">
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day73" class="daily"><img src="images/dailyui/day73.png" style="width:100%"></button>
+        </div>
+        <!-- <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day70" class="daily"><img src="images/dailyui/day70.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day71" class="daily"><img src="images/dailyui/day71.png" style="width:100%"></button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" data-toggle="modal" data-target="#day72" class="daily"><img src="images/dailyui/day72.png" style="width:100%"></button>
+        </div> -->
+      </div>
+
+      <!-- Modal: Day 73-74 -->
+      <div class="modal fade" id="day73" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <center><b style="font-size: 20px;">Day 073 Virtual Reality</b><br><br></center>
+              <img src="images/dailyui/day73.png" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <p class="dailyui">027 Dropdown <b style="font-weight: 100; font-size: 14px">(April 28, 2020)</b></p>
-        <img src="images/dailyui/day27.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">028 Contact Us <b style="font-weight: 100; font-size: 14px">(April 29, 2020)</b></p>
-        <img src="images/dailyui/day28.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">029 Map <b style="font-weight: 100; font-size: 14px">(April 30, 2020)</b></p>
-        <img src="images/dailyui/day29.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">030 Pricing <b style="font-weight: 100; font-size: 14px">(May 1, 2020)</b></p>
-        <img src="images/dailyui/day30.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">031 File Upload <b style="font-weight: 100; font-size: 14px">(May 4, 2020)</b></p>
-        <img src="images/dailyui/day31.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">032 Crowdfunding Campaign <b style="font-weight: 100; font-size: 14px">(May 5, 2020)</b></p>
-        <img src="images/dailyui/day32.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">033 Customize Product <b style="font-weight: 100; font-size: 14px">(May 6, 2020)</b></p>
-        <img src="images/dailyui/day33.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">034 Car Interface <b style="font-weight: 100; font-size: 14px">(May 7, 2020)</b></p>
-        <img src="images/dailyui/day34.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">035 Blog Post <b style="font-weight: 100; font-size: 14px">(May 8, 2020)</b></p>
-        <img src="images/dailyui/day35.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">036 Special Offer <b style="font-weight: 100; font-size: 14px">(May 11, 2020)</b></p>
-        <img src="images/dailyui/day36.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">037 Weather <b style="font-weight: 100; font-size: 14px">(May 12, 2020)</b></p>
-        <img src="images/dailyui/day37.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">038 Calendar <b style="font-weight: 100; font-size: 14px">(May 13, 2020)</b></p>
-        <img src="images/dailyui/day38.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">039 Testimonials <b style="font-weight: 100; font-size: 14px">(May 14, 2020)</b></p>
-        <img src="images/dailyui/day39.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">040 Recipe <b style="font-weight: 100; font-size: 14px">(May 15, 2020)</b></p>
-        <img src="images/dailyui/day40.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">041 Workout Tracker <b style="font-weight: 100; font-size: 14px">(May 18, 2020)</b></p>
-        <img src="images/dailyui/day41.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">042 To Do List <b style="font-weight: 100; font-size: 14px">(May 19, 2020)</b></p>
-        <img src="images/dailyui/day42.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">043 Food/Drink Menu <b style="font-weight: 100; font-size: 14px">(May 20, 2020)</b></p>
-        <img src="images/dailyui/day43.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">044 Favorites <b style="font-weight: 100; font-size: 14px">(May 21, 2020)</b></p>
-        <img src="images/dailyui/day44.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">045 Info Card <b style="font-weight: 100; font-size: 14px">(May 22, 2020)</b></p>
-        <img src="images/dailyui/day45.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">046 Invoice <b style="font-weight: 100; font-size: 14px">(May 25, 2020)</b></p>
-        <img src="images/dailyui/day46.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">047 Activity Feed <b style="font-weight: 100; font-size: 14px">(May 26, 2020)</b></p>
-        <img src="images/dailyui/day47.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">048 Coming Soon <b style="font-weight: 100; font-size: 14px">(May 27, 2020)</b></p>
-        <img src="images/dailyui/day48.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">049 Activity Feed <b style="font-weight: 100; font-size: 14px">(May 28, 2020)</b></p>
-        <img src="images/dailyui/day49.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">050 Job Listing <b style="font-weight: 100; font-size: 14px">(May 29, 2020)</b></p>
-        <img src="images/dailyui/day50.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">051 Press Page <b style="font-weight: 100; font-size: 14px">(June 1, 2020)</b></p>
-        <img src="images/dailyui/day51.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">052 Logo Design <b style="font-weight: 100; font-size: 14px">(June 2, 2020)</b></p>
-        <img src="images/dailyui/day52.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">053 Header Navigation <b style="font-weight: 100; font-size: 14px">(June 3, 2020)</b></p>
-        <img src="images/dailyui/day53.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">054 Confirmation <b style="font-weight: 100; font-size: 14px">(June 4, 2020)</b></p>
-        <img src="images/dailyui/day54.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">055 Icon Set <b style="font-weight: 100; font-size: 14px">(June 5, 2020)</b></p>
-        <img src="images/dailyui/day55.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">056 Breadcrumbs <b style="font-weight: 100; font-size: 14px">(June 8, 2020)</b></p>
-        <img src="images/dailyui/day56.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">057 Video Player <b style="font-weight: 100; font-size: 14px">(June 9, 2020)</b></p>
-        <img src="images/dailyui/day57.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">058 Shopping Cart <b style="font-weight: 100; font-size: 14px">(June 10, 2020)</b></p>
-        <img src="images/dailyui/day58.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">059 Background Pattern<b style="font-weight: 100; font-size: 14px">(June 11, 2020)</b></p>
-        <img src="images/dailyui/day59.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">060 Color Picker <b style="font-weight: 100; font-size: 14px">(June 12, 2020)</b></p>
-        <img src="images/dailyui/day60.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">061 Redeem Coupon <b style="font-weight: 100; font-size: 14px">(June 15, 2020)</b></p>
-        <img src="images/dailyui/day61.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">062 Workout of the Day <b style="font-weight: 100; font-size: 14px">(June 16, 2020)</b></p>
-        <img src="images/dailyui/day62.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">063 Best of 2018 <b style="font-weight: 100; font-size: 14px">(June 17, 2020)</b></p>
-        <img src="images/dailyui/day63.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">064 Select User Type <b style="font-weight: 100; font-size: 14px">(June 18, 2020)</b></p>
-        <img src="images/dailyui/day64.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">065 Notes Widget <b style="font-weight: 100; font-size: 14px">(June 19, 2020)</b></p>
-        <img src="images/dailyui/day65.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">066 Statistics <b style="font-weight: 100; font-size: 14px">(July 20, 2020)</b></p>
-        <img src="images/dailyui/day66.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">067 Hotel Booking <b style="font-weight: 100; font-size: 14px">(July 21, 2020)</b></p>
-        <img src="images/dailyui/day67.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">068 Flight Search <b style="font-weight: 100; font-size: 14px">(July 22, 2020)</b></p>
-        <img src="images/dailyui/day68.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">069 Trending <b style="font-weight: 100; font-size: 14px">(July 29, 2020)</b></p>
-        <img src="images/dailyui/day69.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">070 Event Listing <b style="font-weight: 100; font-size: 14px">(July 30, 2020)</b></p>
-        <img src="images/dailyui/day70.png" style="width:100%">
-        <br><br><br><br>
-
-        <p class="dailyui">30 more days to go...</p>
-        <img src="gifs/stride.gif" style="width: 100%">
-      </center>
-
-    </div><!--end of padding-->
   </div><!--end of container-->
   <div style="text-align: center; font-size: 20px"><br><b><a href="index.html">View All Projects</a></b></div>
   <footer>
