@@ -252,13 +252,16 @@ body > #header{position:fixed;}
 }
 
 
+.glyphicon.glyphicon-chevron-right, .glyphicon.glyphicon-chevron-left {
+  color: gray;
+}
 
 /*slide show*/
 .carousel-indicators li{
-  background-color: #B3DE81;
+  background-color: gray;
 }
 .carousel-indicators .active {
-  background-color: #265C00;
+  background-color: black;
 }
 
 
