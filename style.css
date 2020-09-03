@@ -429,3 +429,20 @@ button {
 button:focus {
   outline:0;
 }
+
+#more1, #more2, #more3, #more4, #more5 {
+  background-color: white;
+  border: none;
+  padding: 20px;
+  width: 95%;
+  display: inline-block;
+  margin: 10px 0;
+  cursor: pointer;
+  box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.2);
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+#more1:hover, #more2:hover, #more3:hover, #more4:hover, #more5:hover {
+  color: #EDB5BF;
+}
