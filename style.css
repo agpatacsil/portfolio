@@ -32,7 +32,7 @@ body, html {
   border-color: transparent;
 }
 .navbar-inverse .navbar-toggle .icon-bar {
-  background-color: #EDB5BF; /*cameo pink*/
+  background-color: #B2B7DF; /*cameo pink*/
 }
 .navbar-inverse .navbar-toggle:focus,
 .navbar-inverse .navbar-toggle:hover  {
@@ -49,7 +49,7 @@ body, html {
 
 /*navigation menu - allison patacsil*/
 .navbar-inverse .navbar-brand {
-  color: #99CED3; /*sea foam*/
+  color: #B2B7DF; /*sea foam*/
   font-size: 30px;
   line-height: 30px;
   padding: 10px 10px;
@@ -77,7 +77,7 @@ body, html {
 }
 
 .navbar-inverse .navbar-nav>li>a:active {
-  color: #5F6366;
+  color: #B2B7DF;
 }
 
 
@@ -343,16 +343,19 @@ ul {
     padding-right: 15%;
 }
 a:link, a:visited{
-  color: #86B3D1; /*purple*/
+  color: #B2B7DF; /*purple*/
   text-decoration: none;
+  font-weight: 500;
 }
 a:hover {
   color: #EDB5BF; /*cameo pink*/
   text-decoration: none;
+  font-weight: 500;
 }
 a:active {
-  color: #86B3D1; /*purple*/
+  color: #B2B7DF; /*purple*/
   text-decoration: none;
+  font-weight: 500;
 }
 hr {
   border: 1px solid #86B3D1; /*sea foam*/
@@ -366,9 +369,28 @@ h4 {
   font-family: avenir, Arial, sans-serif;
 }
 .intro{
-  font-size: 56px;
+  /* font-size: 56px;
   font-weight: 600;
-  line-height: 1;
+  line-height: 1; */
+  font-size: 40px;
+  font-weight: 600;
+}
+#allison{
+  /* text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 5px;
+  text-decoration-color: #C8CCEE;
+  padding-top: 10px; */
+  /* font-size: 40px;
+  font-weight: 600;
+  border-bottom: 10px solid #C8CCEE; */
+  box-shadow: 0px -6px 0px #C8CCEE inset;
+  color: black;
+  font-weight: 600;
+}
+#allison:hover {
+  color: #C8CCEE;
+  font-weight: 600;
 }
 
 
