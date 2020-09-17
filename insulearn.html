@@ -86,7 +86,188 @@
       </div>
       <br>
 
-      <p class="header" style="margin-top: 40px">About InsuLearn</p>
+
+
+      <p class="header" style="margin-top: 40px">Background</p>
+      <p>Technology like continuous glucose monitors (CGM) and insulin
+        pumps make large amounts of data available to people with diabetes. Access
+        to this data helps people better understand how diabetes affects their body which
+        allows them to manage it more effectively.</p><br>
+      <img src="images/insulearn/overwhelm.png" width="100%"><br><br><br>
+      <p>But first they need to learn <i>how</i> to interpret and use this data,
+        and that starts with having a good understanding of the core concepts of diabetes... and that's
+        where we run into trouble!</p>
+
+
+
+      <p class="header">The Problem</p>
+      <p>There is <i>A LOT</i> to learn about diabetes and how to manage it — from
+        monitoring blood glucose levels and deciding when to take your insulin,
+        counting carbs for complex meals and using formulas, staying physically
+        active, the list goes on and on. So how do people learn about diabetes?</p><br>
+      <img src="images/insulearn/learning.png" width="100%"><br><br>
+      <p>There are a ton of books and online resources, but they're very text
+        heavy with a lot of terminology and formulas that can be very hard to
+        understand without guideance. People can also learn from health professionals,
+        like diabetes educators. Getting to interact with an "expert" and have
+        them explain these concepts can be really helpful and much easier
+        than reading a paper, but they're not always available to talk with you.
+        These problems led my team to this question:</p><br>
+      <b style="font-size: 20px;"><i>Can we make learning diabetes concepts more
+        interactive and less focused on numbers and text?</i> 🤔 💭</b>
+
+
+
+      <p class="header">User Research</p>
+      <p>We interviewed <b style="font-weight: 500">4 people with diabetes</b>
+        and <b style="font-weight: 500">2 health professionals</b> to gain
+        insight on their experience with diabetes education and what they consider
+        to be the most important diabetes concepts to learn. Here are some of
+        the major insights:</p><br>
+
+      <img src="images/insulearn/interviews.png" width="100%"><br><br><br>
+      <p>From these interviews, we found that learning how to dose insulin at
+        meals (e.g. prebolusing) to be one of the most important concepts to learn,
+        while also being one of the hardest! To make this concept easier to understand,
+        health professionals use simple visual aids (e.g. hand drawn graphs) with
+        their explanations. These visual aids are really helpful, but repeatedly
+        hand drawing them out is tedious and it's only provided during 1:1 education
+        with health professionals, which isn't accessible to everyone! For these reasons, my team wants to:</p><br>
+      <b style="font-size: 20px;">🌀 Focus on teaching how to dose insulin at meals
+         <b style="font-weight: 500">(e.g. prebolusing)</b></b><br>
+      <b style="font-size: 20px;">🌀 Provide interactive visualizations to support explanations</b>
+
+
+      <p class="header">Ideation</p>
+      <img src="images/insulearn/crazy8.png" width="100%"><br><br><br>
+      <p>Now that we had our focus, we each sketched 8 different ideas in 8 minutes
+        (aka Crazy 8's ideating). Here are the top 3 ideas from all our sketches:</p><br>
+      <img src="images/insulearn/ideas.png" width="100%"><br><br>
+      <ul>
+        <li><b style="font-weight: 500">Inputting Personal Data</b> — Users can
+          generate a 24 hour glucose graph based on age, weight, and gender then
+          input meals, workouts, and insulin doses to see how the glucose curve
+          changes</li>
+        <li><b style="font-weight: 500">Manually Sliding Graph</b> — Users can
+          generate a random glucose curve for a random meal then use sliders to
+          change when and how much insulin gets added</li>
+        <li><b style="font-weight: 500">Choose Your Own Adventure</b> — Users
+          pick a storyline and make decisions that determine the character's
+          actions. At the end, they'll see the 24 hour glucose graph that reflects
+          all the decisions they made</li>
+      </ul><br>
+      <p>After discussing these concepts as a team and with our mentors, we decided
+         to pursue the <b style="font-weight: 500">manually sliding graphs</b>!
+         This design easily let's people see how different insulin doses change
+         the glucose curve, which we think will be the most intuitive and effective
+         way for teaching how to dose insulin at meals.</p>
+
+
+      <p class="header">Early Prototypes</p>
+      <p>Users could click through an optional tutorial that walks them
+        through an example while pointing out the graph's features, providing
+        definitions, and including disclaimers about our tool through a series
+        of pop-ups.</p><br>
+      <div class="row">
+        <div class="col-sm-6" style="padding: 5px">
+          <img src="gifs/tutorial.gif" width="100%" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);"><br><br>
+          <center><b style="font-weight: 500">The Tutorial</b></center>
+        </div>
+        <div class="col-sm-6" style="padding: 5px">
+          <img src="gifs/sliders.gif" width="100%" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);"><br><br>
+          <center><b style="font-weight: 500">The Interactive Graph</b></center>
+        </div>
+      </div><br>
+      <p>After the tutorial, users can choose from multiple starting
+         graphs that show the glucose curve of different scenarios. They can use
+         the insulin time and dose sliders to directly see how different insulin
+         doses affect the glucose curve. The time in range can be found above the
+         graph, since it's becoming more used in diabetes management and it gives
+         people a general idea if their adjustments are improving the glucose curve.</p>
+
+
+      <p class="header">Adding color</p>
+      <p>Most health related companies use cool tones like blue and green to
+         relay a sense of trustworthiness and professionalism, which is why
+         we chose a color scheme revolving around the color teal. We also chose
+         yellow for the target range's upper threshold line and red for the lower
+         as those colors are typically associated with going high and going low respectively.</p><br>
+      <!-- <img src="images/insulearn/colors.png" width="100%"> -->
+      <img src="images/insulearn/style.png" width="100%">
+
+
+
+
+      <p class="header">User testing & key takeaways</p>
+      <p>After creating a user testing plan and building out a testing environment
+         in Figma, we tested our prototype with people with diabetes and
+         health professionals! The focus for testing was to validate the design
+         as an effective teaching tool and to work out any usability issues.
+         Here are some of the key takeaways:</p><br>
+
+      <b>1. Graph titles don't match the graph once the insulin dose changes</b>
+      <p style="padding-left: 20px">For example, this starting graph is titled
+        "forgetting to bolus" with the graph below to match it. If users move the
+        sliders so that they dose insulin 15 minutes before the meal, the graph
+        now has insulin on it. However the graph is still titled "forgetting to
+        bolus", which testers understandably found confusing.</p>
+      <img src="images/insulearn/scenarios.png" width="100%"><br><br>
+      <p style="padding-left: 20px"><b>Solution</b>: Reframe the graph titles to
+        be more general and topic based. For example, change the "Forgetting to
+        bolus" title to "Insulin timing and dosing"</p>
+      <br><br><br>
+
+      <b>2. Our tool should be easy to understand without a tool</b>
+      <p style="padding-left: 20px">With a lot of feedback to add more definitions
+        and disclaimers to our tutorial, it was getting really long, meaning
+        users had to click through a lot of pop-ups which no one likes to do!
+        So as a team we took a step back, remembered that we set a goal to make
+        a tool that's simple and easy to use and came to the conclusion that we
+        shouldn't even need a tutorial.</p>
+      <img src="images/insulearn/lessons.png" width="100%"><br><br>
+      <p style="padding-left: 20px"><b>Solution</b>: Testers liked the definitions
+        and disclaimers found in the tutorial, so we moved them into a supplementary
+        lessons page focused on providing general diabetes information</p>
+      <br><br><br>
+
+      <b>3. How can we show the potential of insulin better?</b>
+      <p style="padding-left: 20px">Testers wondered if we could better visualize
+        the insulin activity because right now it’s "just a curve that lies on top of
+        the glucose."</p>
+      <img src="images/insulearn/visual.png" width="100%"><br><br>
+      <p style="padding-left: 20px"><b>Solution</b>: Add visual indicators: 1)
+        shade in the insulin activity curve, 2) add vertical line along bolus and
+        meal points, and 3) add bolus time in relation to meal time above time
+        slider thumb</p>
+      <br><br><br>
+
+      <b>4. Provide direction when the glucose curve goes above 180 or below 70 mg/dL</b>
+      <p style="padding-left: 20px">A teaching point for this tool is if you
+        correctly time and dose your insulin, you'll be able to stay within target
+        range after you eat. Testers pointed out that this goal of staying within
+        target range is never stated, so people who are new to diabetes may not
+        naturally have that goal in mind.</p>
+      <img src="images/insulearn/direction.png" width="100%"><br><br>
+      <p style="padding-left: 20px"><b>Solution</b>: When the glucose curve goes
+        above 180 and/or below 70 mg/dL, a pop-up directing users to adjust the
+        insulin to move into target range will appear</p>
+
+      <p class="header">The final design</p>
+      <p>After iterating on the user testing insights, I worked with Vidya
+        to code the final design in HTML, CSS, and JavaScript. You can access the final website <a href="http://ddi.ucsd.edu/learn/" target="_blank">here</a>!</p>
+      <br>
+
+      <video width="100%" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);" controls>
+        <source src="videos/insulearn.mov" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+      <center><p style="padding-top: 5px; font-size: 14px">Demo of the final design</p></center>
+
+
+
+
+
+        <!-- <br><br><br><br><br><br>
       <p>Understanding how insulin affects blood glucose levels is important to
        diabetes management, but it can be an overwhelming concept when you're
        first learning! Our goal is to make this concept easier to
@@ -96,6 +277,11 @@
        A full case study will be coming soon, but in the meantime you can check
          out the final implementation <a href="http://ddi.ucsd.edu/learn/" target="_blank"><b>here</b></a>
       </p>
+
+      Newly diagnosed children with type 1 diabetes want a fun and interactive
+      game/activity that explains type 1 diabetes in simple (and not-so-scary)
+      terms so they can learn about their diagnosis while keeping themselves
+      occupied and distracted during the first few days they are stuck in the hospital. -->
 
       <br><br><br><p class="header">Check out some other projects:</p>
       <div class="row" style="margin-left: 5px; margin-right: 5px">
