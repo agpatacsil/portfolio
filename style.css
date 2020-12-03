@@ -310,7 +310,25 @@ body > #header{position:fixed;}
 #ui {
   font-weight: 500;
 }
+html {
+    scroll-behavior: smooth;
+}
 
+.hero {
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+
+    /* Flexbox stuff */
+display: flex;
+justify-content: center;
+align-items: center;
+/* background-image: url("images/background.png");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative; */
+}
 
 
 
@@ -325,6 +343,12 @@ body {
   font-weight: 200;
   color: black;
   /* color: #5F6366; /*granite gray*/
+  /* margin: 0;
+  background-image: url("images/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; */
 }
 p {
   line-height: 1.6;
@@ -372,7 +396,7 @@ h4 {
   /* font-size: 56px;
   font-weight: 600;
   line-height: 1; */
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 600;
 }
 #allison{
@@ -397,7 +421,6 @@ h4 {
 
 
 
-
 .info-cards {
   position: relative;
   width: 100%;
@@ -408,6 +431,13 @@ h4 {
   width: 100%;
 }
 
+.info-cards:hover {
+  transform: scale(1.025);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.25); */
+  box-shadow: -1px -1px 23px -13px rgba(0,0,0,.6);
+}
+
+/*
 .overlay {
   position: absolute;
   top: 0;
@@ -422,9 +452,11 @@ h4 {
   border-radius: 10px;
 }
 
+
 .info-cards:hover .overlay {
   opacity: 1;
 }
+
 
 .text {
   color: white;
@@ -442,7 +474,7 @@ h4 {
 .daily {
   background-color: white;
   border: none;
-}
+} */
 
 button {
   padding-bottom: 10px;
