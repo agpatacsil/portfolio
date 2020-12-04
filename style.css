@@ -315,19 +315,19 @@ html {
 }
 
 .hero {
-    /* Sizing */
-    width: 100vw;
-    height: 100vh;
+  /* Sizing */
+  width: 100vw;
+  height: 100vh;
 
-    /* Flexbox stuff */
-display: flex;
-justify-content: center;
-align-items: center;
-/* background-image: url("images/background.png");
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-position: relative; */
+  /* Flexbox stuff */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-image: url("images/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; */
 }
 
 
@@ -385,8 +385,12 @@ hr {
   border: 1px solid #86B3D1; /*sea foam*/
 }
 footer {
-  text-align: center;
+  /* text-align: center; */
+  margin-top: 125px;
   font-weight: 400;
+  padding: 50px;
+  background-color: #F5F5F5;
+  color: #5E616A;
 }
 h4 {
   /* font-family: sofia-pro; */
