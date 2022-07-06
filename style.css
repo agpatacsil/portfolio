@@ -103,6 +103,10 @@ a:hover {
   }
 }
 
+ul, li {
+  color: rgba(0,0,0,0.7);
+}
+
 /*--------------------------------------*/
 /*-------------navigation---------------*/
 /*--------------------------------------*/
@@ -272,6 +276,18 @@ body > #header{position:fixed;}
   }
 }
 
+@media screen and (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    gap: 8px;
+    max-width: 100%;
+  }
+
+  .home img {
+    max-width: 100%;
+  }
+}
+
 /*----end of home page - hero section-------*/
 
 
@@ -351,6 +367,25 @@ body > #header{position:fixed;}
 
   .about-image {
     width: 100%;
+  }
+
+  .about h2 {
+    font-size: 40px;
+  }
+
+  .about-spacer {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .about-image {
+    max-width: 100%;
   }
 
   .about h2 {
@@ -643,4 +678,32 @@ body > #header{position:fixed;}
   #takeaway5 {
     width: 100%;
   }
+}
+
+#more-projects button {
+  background-color: white;
+  border: none;
+  padding: 20px;
+  width: 100%;
+  display: inline-block;
+  margin: 10px 0;
+  cursor: pointer;
+  box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.2);
+  font-size: 16px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+#more-projects-gray button {
+  background-color: #F8F8F8;
+  border: none;
+  padding: 20px;
+  width: 100%;
+  display: inline-block;
+  margin: 10px 0;
+  cursor: pointer;
+  box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.2);
+  font-size: 16px;
+  border-radius: 6px;
+  font-weight: 600;
 }
