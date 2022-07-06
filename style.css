@@ -1,0 +1,646 @@
+body, html {
+  height: 100%;
+}
+
+body {
+  font-family: 'work sans', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 75px;
+}
+
+h2 {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 70px;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+h4 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h6 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+b {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(0,0,0,0.7);
+}
+
+a:hover {
+  text-decoration: none;
+  color: #81A230; /* light green */
+}
+
+.solid {
+  border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.caption {
+  margin-bottom: 64px;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.caption b {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 440px) {
+  h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  h2 {
+    font-size: 32px;
+    line-height: normal;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  h6 {
+    font-size: 18px;
+  }
+}
+
+/*--------------------------------------*/
+/*-------------navigation---------------*/
+/*--------------------------------------*/
+
+/* navigation menu */
+.navbar-inverse {
+  background-color: white;
+  border-color: white;
+}
+.container-fluid{
+  margin: 16px;
+}
+
+/* navigation menu toggle bar */
+.navbar-inverse .navbar-toggle {
+  margin-right: 0;
+  background-color: transparent;
+  border-color: transparent;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #34703D; /* dark green */
+}
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover  {
+  background-color: transparent;
+}
+.navbar-inverse .navbar-collapse {
+  border-color: white;
+}
+
+
+/* navigation menu - allison patacsil */
+.navbar-inverse .navbar-brand {
+  color: #34703D; /* dark green */
+  font-size: 30px;
+  line-height: 30px;
+  padding: 10px 10px;
+  font-weight: 500;
+}
+.navbar:link, .navbar:visited {
+  color: #34703D; /* dark green */
+  text-decoration: none;
+}
+.navbar-inverse .navbar-brand:hover {
+  color: #34703D; /* dark green */
+}
+
+
+/* navigation menu - portfolio, resume, about */
+.navbar-inverse .navbar-nav>li>a:link, .navbar-inverse .navbar-nav>li>a:visited {
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+}
+.navbar-inverse .navbar-nav>li>a:hover {
+  color: #81A230; /* light green */
+}
+
+.navbar-inverse .navbar-nav>li>a:active {
+  color: #81A230; /* light green */
+}
+
+#current-page {
+  color:#DE5870; /* pink */
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+
+/* navigation bar drop shadow */
+body > #header{position:fixed;}
+
+#header {
+    width: 100%;
+    position: fixed;
+    z-index:100;
+    overflow: auto;
+    transition: all 0.15s linear;
+}
+
+#header.active {
+     box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/*---------end of navigation-----------*/
+
+
+
+
+
+/*--------------------------------------------*/
+/*---------home page - hero section-----------*/
+/*--------------------------------------------*/
+
+.hero-space {
+  padding: 80px;
+}
+
+.hero-bottom-space {
+  padding: 60px;
+}
+
+#allison {
+  box-shadow: 0px -8px 0px #FFC92C inset; /* yellow */
+  color: black;
+  font-weight: 800;
+}
+
+#allison:hover {
+  color: #FFC92C; /* yellow */
+}
+
+.intro {
+  font-size: 27px;
+  font-weight: 500;
+}
+
+.intro-work {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+@media screen and (max-width: 440px) {
+  .hero-space {
+    padding: 25px;
+  }
+
+  .intro {
+    font-size: 20px;
+  }
+
+  .hero-bottom-space {
+    padding: 28px;
+  }
+}
+
+@media screen and (min-width: 880px) {
+  .hero-space {
+    padding: 50px;
+  }
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  gap: 48px;
+  text-align: left;
+  max-width: 90%
+}
+
+.home img {
+  max-width: 343px;
+}
+
+@media screen and (max-width: 440px) {
+  .home {
+    flex-direction: column;
+    gap: 8px;
+    max-width: 100%;
+  }
+
+  .home img {
+    max-width: 100%;
+  }
+}
+
+/*----end of home page - hero section-------*/
+
+
+
+/*--------------------------------------------*/
+/*------------------about page----------------*/
+/*--------------------------------------------*/
+.about-link {
+  box-shadow: 0px -7px 0px #D6E9F4 inset; /* yellow */
+  color: rgba(0,0,0,0.7);
+}
+
+.about-link:hover {
+  color: #1F4570; /* yellow */
+}
+
+.about-link-green {
+  box-shadow: 0px -7px 0px #DFE8CB inset; /* yellow */
+  color: rgba(0,0,0,0.7);
+}
+
+.about-link-green:hover {
+  color: #81A230; /* yellow */
+}
+
+.about-link-pink {
+  box-shadow: 0px -7px 0px #F7D5DB inset; /* yellow */
+  color: rgba(0,0,0,0.7);
+}
+
+.about-link-pink:hover {
+  color: #DE5870; /* yellow */
+}
+
+.about-link-yellow {
+  box-shadow: 0px -7px 0px #FFF1CA inset; /* yellow */
+  color: rgba(0,0,0,0.7);
+}
+
+.about-link-yellow:hover {
+  color: #FFC92C; /* yellow */
+}
+
+.about-link-purple {
+  box-shadow: 0px -7px 0px #D3C8FE inset; /* yellow */
+  color: rgba(0,0,0,0.7);
+}
+
+.about-link-purple:hover {
+  color: #A792FE; /* yellow */
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  gap: 48px;
+  text-align: left;
+  max-width: 90%
+}
+
+.about-image {
+  max-width: 400px;
+  border-radius: 5px;
+}
+
+.about-spacer {
+  padding: 40px;
+}
+
+@media screen and (max-width: 480px) {
+  .about {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .about-image {
+    width: 100%;
+  }
+
+  .about h2 {
+    font-size: 40px;
+  }
+
+  .about-spacer {
+    padding: 20px;
+  }
+}
+
+/*--------------end of about page----------------*/
+
+
+
+/*----------------------------------------------*/
+/*------------ START OF PROJECT CARD -----------*/
+/*----------------------------------------------*/
+
+.project-container {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+    align-items: flex-start;
+}
+
+@media all and (min-width: 600px) {
+    .project-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    border: 1px solid #E8EBEB;
+    /* box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15); */
+    margin-bottom: 32px;
+    border-radius: 8px;
+}
+
+
+@media screen and (max-width: 440px) {
+    .card {
+          margin-bottom: 0px;
+      }
+  }
+  .card-img {
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 8px 8px 0px 0px;
+}
+
+
+.card-img img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px 8px 0px 0px;
+}
+
+@media screen and (max-width: 880px) {
+    .card-img img {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+      }
+  }
+
+.card-details {
+    padding: 16px 32px 32px 32px;
+}
+
+@media screen and (max-width: 440px) {
+    .card-details h2 {
+        font-size: 32px;
+        line-height: 40px;
+        padding-bottom: 4px;
+      }
+  }
+
+.card-details p {
+    margin-bottom: 36px;
+    line-height: 26px;
+    font-size: 18px;
+}
+
+.card-btn {
+  background-color: #000;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 150px;
+}
+
+.card-btn:hover {
+  background-color: #ffc92c;
+  color: black;
+}
+
+/*------------ END OF PROJECT CARD ------------*/
+
+
+/*----------------------------------------------*/
+/*------------ START OF CASE STUDY -----------*/
+/*----------------------------------------------*/
+.casestudy-space {
+  padding: 50px;
+}
+
+.casestudy-container {
+  padding-left: 275px;
+  padding-right: 275px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+@media screen and (max-width: 440px) {
+    .casestudy-container {
+      padding-left: 20px;
+      padding-right: 20px;
+      }
+  }
+
+.casestudy-details {
+  font-size: 16px;
+}
+
+.phone-gif {
+  padding: 48px 64px 16px 64px;
+  width: 100%;
+  border-radius: 110px;
+}
+
+.gif-caption {
+  margin-bottom: 64px;
+  font-size: 14px;
+  text-align: left;
+  margin-top: 8px;
+  padding-left: 64px;
+  padding-right: 64px;
+}
+
+.checklist p {
+  font-size: 14px;
+  line-height: 16px;
+}
+/*----------------------------------------------*/
+/*------------ END OF CASE STUDY -----------*/
+/*----------------------------------------------*/
+
+
+
+
+
+/*--------------------------------------*/
+/*-------------accordion----------------*/
+/*--------------------------------------*/
+.accordion {
+  background-color: transparent;
+  cursor: pointer;
+  padding: 16px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  font-size: 18px;
+  padding-bottom:0px;
+  padding-top: 0px
+}
+
+.panel {
+  background-color: transparent;
+  display: none;
+  overflow: hidden;
+  padding-top: 8px;
+  margin-bottom: 16px
+  border: none;
+  -webkit-box-shadow: none;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.activate:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+/*-------------end of accordion----------------*/
+
+
+
+.search-gif {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  gap: 32px
+}
+
+@media screen and (max-width: 440px) {
+    .search-gif {
+      flex-direction: column;
+      }
+  }
+
+
+
+
+
+/*----------------------------------------------------*/
+/*------- project card hover on home page ------------*/
+/*----------------------------------------------------*/
+.hover-card {
+  position: relative;
+  max-width: 100%;
+}
+.hover-card img.image-hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .2s;
+}
+.hover-card:hover img.image-hover {
+  opacity: 1;
+}
+/*----- end of project card hover on home page ------*/
+
+
+
+
+/*----------------------------------------------*/
+/*-------------- START OF FOOTER ---------------*/
+/*----------------------------------------------*/
+.footer {
+  text-align: center;
+  padding: 60px;
+  border-top: 1.5px solid rgba(0,0,0,0.1);
+}
+
+.footer a {
+  color: rgba(0,0,0,0.7);
+}
+
+.footer a:hover {
+  color: #81A230;
+}
+
+@media screen and (max-width: 440px) {
+  .footer{
+    padding: 48px 16px 48px 16px;
+  }
+}
+/*-------------- END OF FOOTER ---------------*/
+
+
+
+
+@media screen and (max-width: 440px) {
+  #premium-touchpoints1 .caption {
+    margin-bottom: 28px;
+  }
+
+  #premium-touchpoints2 .caption {
+    margin-bottom: 28px;
+  }
+}
+
+#takeaway5 {
+  margin-bottom: 32px;
+  max-width: 500px;
+}
+
+@media screen and (max-width: 440px) {
+  #takeaway5 {
+    width: 100%;
+  }
+}

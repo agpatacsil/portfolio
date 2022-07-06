@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Allison Patacsil</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--css-->
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="https://use.typekit.net/eep3vgi.css">
+  <link rel="stylesheet" href="style.css">
+  <!--js-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/1db66828d2.js" crossorigin="anonymous"></script> <!-- for smiley -->
+  <script src="script.js"></script>
+</head>
+<body>
+  <!--navbar-->
+  <nav class="navbar navbar-inverse navbar-fixed-top" id="header">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="index.html#project-scroll">projects</a></li>
+            <li><a href="https://drive.google.com/file/d/1WCsgzn-X-maNKkawIvz1sFP9FojuindZ/view?usp=sharing" target="_blank">resume</a></li>
+            <li><a href="about.html">about</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="https://www.linkedin.com/in/agp/" target="_blank"><img src="images/icons/linkedin.png" style="width: 20px"></a></li>
+          <li><a href="https://dribbble.com/allisonpatacsil" target="_blank"><img src="images/icons/dribbble.png" style="width: 20px"></a></li>
+          <li><a href="mailto:agpatacsil@gmail.com" target="_blank"><img src="images/icons/mail.png" style="width: 20px"></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="casestudy-space"></div>
+
+  <!--hero section-->
+  <div class="container" style="margin-bottom: 48px;">
+    <h1 style="line-height: 54px;">Design System</h1>
+    <p class="intro">Library of components in Figma</p>
+    <br>
+    <div class="row" style="max-width: 800px">
+        <div class="col-sm-3">
+          <b>Role</b><div style="padding: 4px"></div>
+          <p class="casestudy-details">Product designer
+          </p>
+        </div>
+        <div class="col-sm-3">
+          <b>Tools</b><div style="padding: 4px"></div>
+          <p class="casestudy-details">Figma
+          </p>
+        </div>
+        <div class="col-sm-3">
+          <b>Duration</b><div style="padding: 4px"></div>
+          <p class="casestudy-details">2 months</p>
+        </div>
+      </div>
+  </div>
+
+  <!--hero image -->
+  <img src="images/designsystem/hero.png" width=100%>
+
+  <!--background-->
+  <div class="casestudy-container" style="background-color: #F8F8F8;">
+    <h4>Background</h4>
+    <p>When I first joined Abound, they had a barebone foundation for a design
+      system consisting of typography, colors, and a few components. However,
+      they had no actual documentation of this design system to act as a
+      source-of-truth & facilitate knowledge sharing across the company.<p>
+    <p style="margin-top: 24px">To allow the design team to continue working fast & maintain consistency
+      as our company grew, I was tasked with building our design system! Some of
+      my goals were:</p>
+    <ul style="font-size: 18px">
+      <li>Document all component variations</li>
+      <li>Provide usage guidelines for each component</li>
+      <li>Improve accessibility of existing components as needed</li>
+    </ul>
+  </div>
+
+  <!--building out the design system-->
+  <div class="casestudy-container">
+    <h2 style="margin-top: 0px">Building the design system</h2>
+    <h4>Research</h4>
+    <p>I had never created a design system before, so I started this project with some research:</p>
+    <ul style="font-size: 18px">
+      <li>I explored various companies' design systems, such as Atlassian's design system, IBM's Carbon, and Google's Material Design</li>
+      <li>I read articles and blog posts about how companies, such as Instacart and Airbnb, built & maintain their design systems</li>
+      <li>As suggested by my manager, I looked at the atomic design principles that Brad Frost outlines</li>
+    </ul>
+    <br>
+    <img src="images/designsystem/research.png" width="100%">
+    <p class="caption" style="margin-bottom: 0px">Documented my research in Notion</p>
+  </div>
+
+  <div class="casestudy-container" style="background-color: #F8F8F8;">
+    <h4>Plan of Attack</h4>
+    <p>After my internet research, I had my plan for creating the design system:</p>
+    <ol style="font-size: 18px">
+      <li>Interface audit (screenshot and categorize all the unique UI patterns)</li>
+      <li>Share findings with design team (discuss any inconsistencies and areas for redesign if needed)</li>
+      <li>Build components & all their variants in Figma</li>
+      <li>Write usage guidlines for each component</li>
+      <li>Share new design system with product, design & engineering</li>
+    </ol>
+  </div>
+
+  <div class="casestudy-container">
+    <h4>Interface Audit</h4>
+    <p>I went through our site & screenshotted all the components and patterns
+      we were utilizing. When I shared this audit with the design team, I brought
+      up inconsistencies we should mend & discussed component use cases and how
+      we might consolidate the number of stylings/variations we were using
+      (because we were using a lot 👀)</p>
+    <br>
+    <img src="images/designsystem/audit.png" width="100%">
+  </div>
+
+  <div class="casestudy-container" style="background-color: #F8F8F8;">
+    <h3>The Component Library</h3>
+    <p>Based on my initial exploration of other design systems, I decided to put
+      each component on a separate page in Figma. This organization makes it easy
+      for other designers to find the components they need & reduces clutter on pages.</p>
+    <br>
+    <center><img src="images/designsystem/library.gif" width="100%" style="margin-bottom: 64px; max-width:700px; box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.25);"></center>
+
+    <h5>Variable Components</h5>
+    <p>The bulk of my time for this project went to making the actual components
+      in Figma. I created 25 components ranging from simple ones, such as avatars,
+      buttons, and pills, to more complex ones like cards and modals. And for
+      each component, I included all their variations (size, shadow, state, etc.)
+      I also utilized auto layout whenever I could so they'd be as responsive as
+      possible to make it easier for the design team when creating mockups.</p>
+    <br>
+    <img src="images/designsystem/button.png" width="100%" style="margin-bottom: 64px">
+
+    <h5>Accessbility</h5>
+    <p>A big priority for me when building this design system was accessibility.
+      I wanted to make sure that each element in our design system considered
+      all of our users. So designing with close attention to WCAG standards, I was able
+      to build components that were highly accessible & maintained Abound's branding.</p>
+    <br>
+    <img src="images/designsystem/colors.png" width="100%" style="margin-bottom: 64px">
+
+    <h5>Usage Guidelines</h5>
+    <p>For each component, I included a definition, types, styles, when to use &
+      when not to use, and screenshot examples for desktop and mobile.</p>
+    <br>
+    <img src="images/designsystem/guideline.png" width="100%">
+  </div>
+
+  <div class="casestudy-container">
+    <h2 style="margin-top: 0px">Reflection</h2>
+    <ul style="font-size: 18px">
+      <li style="margin-bottom: 16px">Being able to pull components from this library helped the design team
+        build high fidelity mockups with quickness and ease. It also helped us
+        maintain consistency across the site and minimize the amount of one-off
+        stylings being used.</li>
+      <li>My initial exploration showed me that all design systems are different!
+        There isn't one master list of components that everyone needs or specific
+        number of stylings you should have—they're all built and
+        organized in a way to fit the company's needs. And I feel like I was able
+        to do just that with ours :)</li>
+    </ul>
+  </div>
+
+
+  <footer class="footer">
+    <h6>
+      <a href="https://www.linkedin.com/in/agp/" target="_blank">Linkedin ↗</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://dribbble.com/allisonpatacsil" target="_blank">Dribbble ↗</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="mailto: agpatacsil@gmail.com" target="_blank">Email ↗</a>
+    </h6>
+    <br>
+    <p>Designed and coded by me (ft. many iced lattes <i class="fa-sm fa-solid fa-mug-hot"></i>)</p>
+    <p>©2022 Allison Patacsil</p>
+  </footer>
+
+</body>
+</html>

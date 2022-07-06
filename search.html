@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Allison Patacsil</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--css-->
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="https://use.typekit.net/eep3vgi.css">
+  <link rel="stylesheet" href="style.css">
+  <!--js-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/1db66828d2.js" crossorigin="anonymous"></script> <!-- for smiley -->
+  <script src="script.js"></script>
+</head>
+<body>
+  <!--navbar-->
+  <nav class="navbar navbar-inverse navbar-fixed-top" id="header">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="index.html#project-scroll">projects</a></li>
+            <li><a href="https://drive.google.com/file/d/1WCsgzn-X-maNKkawIvz1sFP9FojuindZ/view?usp=sharing" target="_blank">resume</a></li>
+            <li><a href="about.html">about</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="https://www.linkedin.com/in/agp/" target="_blank"><img src="images/icons/linkedin.png" style="width: 20px"></a></li>
+          <li><a href="https://dribbble.com/allisonpatacsil" target="_blank"><img src="images/icons/dribbble.png" style="width: 20px"></a></li>
+          <li><a href="mailto:agpatacsil@gmail.com" target="_blank"><img src="images/icons/mail.png" style="width: 20px"></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="casestudy-space"></div>
+
+  <!--hero section-->
+  <div class="container" style="margin-bottom: 48px;">
+    <h1 style="line-height: 54px;">Search Improvements</h1>
+    <p class="intro">Find what you need with quickness & ease</p>
+    <br>
+    <div class="row" style="max-width: 800px">
+        <div class="col-sm-3">
+          <b>Role</b><div style="padding: 4px"></div>
+          <p class="casestudy-details">Product designer
+          </p>
+        </div>
+        <div class="col-sm-3">
+          <b>Responsibilities</b><div style="padding: 4px"></div>
+          <p class="casestudy-details">User Interviews<br>Wireframing<br>Prototyping<br>
+          </p>
+        </div>
+        <div class="col-sm-3">
+          <b>Team</b><div style="padding: 4px"></div>
+          <p class="casestudy-details">2 engineers<br>1 product manager
+          </p>
+        </div>
+        <div class="col-sm-3">
+          <b>Duration</b><div style="padding: 4px"></div>
+          <p class="casestudy-details">3 months</p>
+        </div>
+      </div>
+  </div>
+
+  <!--hero image -->
+  <img src="images/search/hero.png" width=100%>
+
+  <!--background-->
+  <div class="casestudy-container" style="background-color: #F8F8F8;">
+    <h4>Background</h4>
+    <p>Abound is an online two-sided marketplace for buying and selling wholesale. Consistent
+      feedback from our retailers is that our search is "bad" & they can't find what
+      they're looking for, but we don't know exactly <i>why</i> that is. So before
+      I could make any improvements to the search experience, I needed to figure
+      out: <span style="background-color: #FFE495">what exactly is our
+      problem with search?</span></p>
+  </div>
+
+  <!--research & ideation-->
+  <div class="casestudy-container">
+    <h2 style="margin-top: 0px">Research</h2>
+    <p>I started this project by looking at the ui/ux of our current search
+      experience to identify pain points. I did this to get a deeper understanding of the
+      problem space & so I could explore these insights further with the retailers I planned on talking to.</p>
+    <br>
+
+    <!-- <div class="search-gif">
+      <div>
+        <img src="images/search/main-search.gif" style="max-width: 300px;margin-bottom: 32px; box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.25);">
+      </div>
+      <div style="display: flex; justify-content: center; align-content: center; flex-direction: column;">
+        <p><i class="fa-lg fa-solid fa-xmark" style="color: #DE5870"></i> The
+          featured brands in the search dropdown never change</p>
+        <p><i class="fa-lg fa-solid fa-xmark" style="color: #DE5870"></i> When
+          you delete a recent search, it closes the entire dropdown</p>
+        <p><i class="fa-lg fa-solid fa-xmark" style="color: #DE5870"></i> We
+          still show recent searches once you start entering a search query</p>
+        <p><i class="fa-lg fa-solid fa-xmark" style="color: #DE5870"></i> We
+          just show the search term as the heading</p>
+        <p><i class="fa-lg fa-solid fa-xmark" style="color: #DE5870"></i> <b>Relevancy
+          issue</b>: I searched "cowboy boots" and I see more stickers, keychains, and earrings than shoes</p>
+      </div>
+    </div> -->
+
+
+    <h4>Pain Points</h4>
+    <br>
+    <center><b>Searching for a product</b></center>
+    <img src="images/search/product-search.png" width="100%" style="margin-bottom: 32px">
+    <br><br>
+    <center><b>Searching for a brand</b></center>
+    <img src="images/search/brand-search.png" width="100%" style="margin-bottom: 32px; margin-top: 10px">
+  </div>
+
+  <!--data around search-->
+  <!-- <div class="casestudy-container" style="background-color: #F8F8F8;">
+    <h4>Data Around Search</h4>
+    <p>I also wanted to get some data points around search, so I worked with my PM to find answers to some of my questions:</p>
+    <ul style="font-size: 18px">
+      <li>Do we know what the conversion is for using search? Is it bad?</li>
+        <ul><li><i style="color: rgba(0,0,0,0.5)">Unfortunately we didn't have events in place to answer this</i></li></ul>
+      <li>What’s the average position/page for the product that the retailer first interacts with?</li>
+        <ul><li>Average = 20th product on the first search results page</li></ul>
+      <li>At what position/page do they stop scrolling through the search results?</li>
+        <ul><li><i style="color: rgba(0,0,0,0.5)">Unfortunately we didn't have events in place to answer this</i></li></ul>
+    </ul>
+    <br>
+    <p>For the questions I was unable to get answers to with quantitative data,
+      I would try to gain insights for them during my interviews with retailers!</p>
+  </div> -->
+
+
+  <!--user interviews-->
+  <div class="casestudy-container" style="background-color: #F8F8F8">
+    <h4>Interviewing Retailers</h4>
+    <div class="row">
+      <div class="col-sm-8">
+        <p style="margin-bottom: 24px">I interviewed 8 retailers via Zoom––the participants I chose either
+          expressed being unhappy with our search (found by looking through old
+          interview notes & PMF survey responses) OR they appeared to have had a
+          poor search experience (found by watching FullStory recordings).</p>
+        <p>I started by asking them questions about their current process for
+          finding products/brands on Abound & then did a task with them where
+          they actually search for something.</p>
+      </div>
+      <div class="col-sm-4">
+        <img src="images/search/plan.png" width="100%">
+        <p class="caption" style="margin-bottom: 0px">User interview plan</p>
+      </div>
+    </div>
+  </div>
+
+  <!--Interview findings-->
+  <div class="casestudy-container">
+    <h4>Interview Findings</h4>
+    <br>
+    <h6>"I give up" point in search results</h6>
+    <p>Based on observations during the interview task, this
+      tends to be after 3-4 pages. At this point they'll either try another
+      search term or move on to other things. Is there a way we can surface
+      more products they'd want in these first 4 pages and/or provide them related search terms?</p>
+    <br>
+    <h6>Relevancy issues with search results</h6>
+    <p>General search terms (e.g. "coffee") & search terms with descriptors
+      (e.g. "wooden knife") seem to face this issue the most</p>
+    <ul style="font-size: 18px">
+      <li><u>General</u>: see wide array of products that aren't necessarily related to the search term</li>
+      <li><u>With descriptors</u>: see products that are relevant to each term</li>
+    </ul>
+    <br>
+    <div class="row">
+      <div class="col-sm-6">
+        <center>
+          <img src="images/search/general.png" style="max-width: 343px; box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.25)">
+          <p class="caption" style="max-width: 343px; margin-bottom: 48px;"><b>Searched "coffee":</b>
+            See necklaces, t-shirts, etc. that have nothing to do with coffee</p>
+        </center>
+      </div>
+      <div class="col-sm-6">
+        <center>
+          <img src="images/search/relevancy.png" style="max-width: 343px; box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.25)">
+          <p class="caption" style="max-width: 343px; margin-bottom: 48px;"><b>Searched "wooden knife":</b>
+            See wooden products, knife products, and wooden knife products</p>
+        </center>
+      </div>
+    </div>
+    <h6>Difficulty searching for brands</h6>
+    <p>They search for a brand when they need to reorder and/or want to see if a
+      brand is on Abound. Sometimes they don't know the exact brand name or
+      mispell it so none of that brand's products comes up in the search results.
+      Plus there's confusion that the search results page is actually the brand shop page...</p>
+    <br>
+      <div class="row">
+        <div class="col-sm-6">
+          <center>
+            <img src="images/search/search-brand.png" style="max-width: 343px; box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.25)">
+            <p class="caption" style="max-width: 343px; margin-bottom: 48px;"><b>
+              Search results page for "Julia Rose":</b> Retailers mistake this
+              for the brand shop page because of the heading & due to seeing so
+              many Julia Rose products on this page </p>
+          </center>
+        </div>
+        <div class="col-sm-6">
+          <center>
+            <img src="images/search/bsp.png" style="max-width: 343px; box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.25)">
+            <p class="caption" style="max-width: 343px; margin-bottom: 48px;"><b>Julia
+              Roses's brand shop page:</b> Each brand has their own page on Abound
+              that tells their story & shows all their products</p>
+          </center>
+        </div>
+      </div>
+    <h6>Searching via category pages</h6>
+    <p>On the product team we differentiate direct searches using the search bar
+      from browsing via our category pages. <i>However</i> our retailers don't have this
+      same distinction & consider both as "search", so some insights from browsing
+      the category pages were:</p>
+    <ul style="font-size: 18px">
+      <li>Lifestyle images (image that brands set to capture the spirit of
+        their brand) don’t give retailers enough insight as to what
+        the brand sells</li>
+      <li>Sometimes the lifestyle images are not relevant to the category they’re viewing</li>
+    </ul>
+    <br>
+    <img src="images/search/category.png" style="width: 100%">
+    <br>
+  </div>
+
+
+  <!--Ideation-->
+  <div class="casestudy-container" style="background-color: #F8F8F8">
+    <h2>Ideation & Prioritization</h2>
+    <p>I brainstormed opportunities & improvements based on my interview findings
+      & the pain points I identified:</p>
+    <br>
+    <center><img src="images/search/ideas.png" style="width: 100%"></center>
+    <br><br><br>
+    <h4>Prioritization Mapping</h4>
+    <p>I worked with my product manager to determine which ideas we wanted to
+      test & then prioritized them based on how much they might impact GMV and
+      engineering effort:</p>
+    <br><br>
+    <center><img src="images/search/prioritization.png" style="max-width: 650px"></center>
+    <br><br>
+    <p>We prioritized building features that require low engineering effort &
+      have the potential to have high impact on GMV (the upper left section in
+      the priority map).</p>
+    <br><br>
+    <h4>Discovery</h4>
+    <p>Now that we had our features prioritized, I did some competitive research
+      to get some inspiration and see if there were any established patterns. I looked
+      at Uber Eats & Instagram for search ui/ux, Etsy & Instcart for brand CTA
+      on search result pages, and Faire & Tundra for image carousel inpsiration.</p>
+    <br>
+    <img src="images/search/inspo.png" style="width: 100%">
+  </div>
+
+
+
+  <!--Design-->
+  <div class="casestudy-container">
+    <h2 style="margin-top: 0px; margin-bottom: 16px">Designs</h2>
+    <h4>Improve search dropdown ui/ux</h4>
+    <ul style="font-size: 18px">
+      <li>Update the ux so that when I click the "X" to clear a recent search it
+        just removes the search term & doesn't close the dropdown</li>
+      <li>Make the dropdown full width &  shift all the content up so that the
+        top bar isn’t showing</li>
+      <li>Add a “search” icon to the left of the search term
+        with a gray background to improve the ui. For recent search terms, use a
+        "time" icon & move the “X” to the right side.</li>
+      <li>Hide recent search terms when you start typing as they're no longer needed
+        since the retailer already has a search in mind. Plus
+        it moves up the brand suggestions.</li>
+    </ul>
+    <br>
+    <div class="row">
+      <div class="col-sm-6">
+        <center>
+          <p><b>previous</b></p>
+          <img src="images/search/ui-previous.png" style="max-width: 343px">
+        </center>
+      </div>
+      <div class="col-sm-6">
+        <center>
+          <p><b>current</b></p>
+          <img src="images/search/ui-current.png" style="max-width: 343px">
+        </center>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h4>Updates to search result pages</h4>
+    <p>I focused my changes for this page on making it more obvious it's a search
+      results page & making it easier to get to a brand shop page:</p>
+    <ul style="font-size: 18px">
+      <li>Change header copy to: Results for “[search term]” so that it’s more clear
+        that this is a search results page and not the brand's shop page. Plus
+        this format is a more standard practice.</li>
+      <li>Show a CTA for the brand shop page if the retailer enters an exact brand name.
+        For example if I enter, “Sticks Inc.” I would see the brand CTA. If I
+        entered, “Sticks” I wouldn’t see the brand CTA.</li>
+    </ul>
+    <br>
+    <div class="row">
+      <div class="col-sm-6">
+        <center>
+          <p style="margin-bottom: 0px"><b>previous</b></p>
+          <img src="images/search/searchpage-previous.png" style="max-width: 343px">
+        </center>
+      </div>
+      <div class="col-sm-6">
+        <center>
+          <p style="margin-bottom: 0px"><b>current</b></p>
+          <img src="images/search/searchpage-current.png" style="max-width: 343px">
+        </center>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h4>Image carousel on brand cards</h4>
+    <p>Retailers will be able to click through up to 5 product images on brand
+      cards to get a better sense of what the brand offers.</p>
+    <ul style="font-size: 18px">
+      <li>When you hover over the card image on desktop, the arrows for you to
+        click through the carousel will appear</li>
+      <li>To make this feature discoverable, I included dot indicators below the
+        card image. This was especially needed for mobile since it won't have the
+        hover effect</li>
+    </ul>
+    <br>
+    <div class="row">
+      <div class="col-sm-6">
+        <center>
+          <p style="margin-bottom: 0px"><b>previous</b></p>
+          <br>
+          <img src="images/search/category-og.png" style="width: 100%; box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.25);">
+        </center>
+      </div>
+      <div class="col-sm-6">
+        <center>
+          <p style="margin-bottom: 0px"><b>current</b></p>
+          <br>
+          <img src="images/search/carousel.gif" style="width: 100%; box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.25);">
+        </center>
+      </div>
+    </div>
+    <br><br>
+  </div>
+
+  <div class="casestudy-container" style="background-color: #F8F8F8">
+    <h2>Learnings</h2>
+    <p><b>Improve search dropdown ui/ux:</b> After releasing the ui/ux enhancements,
+      we saw frustrated clicks in the search dropdown decrease & clicks on the
+      brand suggestions increase. Plus there are still more ideas I'd love to
+      test—on the roadmap is showing trending search terms & personalizing the
+      featured brands in the search dropdown.</p>
+    <div style="margin-bottom: 20px"></div>
+    <p><b>Updates to search result pages:</b> The addition of the brand CTA led
+      to more retailers finding the brand shop page from the search results page.
+      Right now the brand CTA only appears if the search term exactly matches a
+      brand name. We could make this even better for retailers by having the CTA
+      show up for slight misspellings.</p>
+    <div style="margin-bottom: 20px"></div>
+    <p><b>Image carousel on brand cards:</b> During testing we saw performance
+      issues due to adding so many images to the page. As a result, we didn't end
+      up releasing this feature because we didn't want to greatly hinder performance
+      for these highly trafficked pages. Page performance was a big takeaway for
+      me coming out of this project! It's now something I think about when
+      designing & discussing designs with engineers.</p>
+  </div>
+
+  <footer class="footer" style="background-color: #F8F8F8;">
+    <h6>
+      <a href="https://www.linkedin.com/in/agp/" target="_blank">Linkedin ↗</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://dribbble.com/allisonpatacsil" target="_blank">Dribbble ↗</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="mailto: agpatacsil@gmail.com" target="_blank">Email ↗</a>
+    </h6>
+    <br>
+    <p>Designed and coded by me (ft. many iced lattes <i class="fa-sm fa-solid fa-mug-hot"></i>)</p>
+    <p>©2022 Allison Patacsil</p>
+  </footer>
+
+</body>
+</html>
