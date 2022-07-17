@@ -707,3 +707,8 @@ body > #header{position:fixed;}
   border-radius: 6px;
   font-weight: 600;
 }
+
+
+#priority-map {
+  max-width: 650px;
+}
