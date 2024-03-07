@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Allison Patacsil</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--css-->
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="https://use.typekit.net/eep3vgi.css">
+  <link rel="stylesheet" href="style.css">
+
+  <!--js-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/1db66828d2.js" crossorigin="anonymous"></script> <!-- for smiley -->
+  <script src="script.js"></script>
+</head>
+<body>
+
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Allison Patacsil</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--css-->
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="https://use.typekit.net/eep3vgi.css">
+  <link rel="stylesheet" href="style.css">
+
+  <!--js-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/1db66828d2.js" crossorigin="anonymous"></script> <!-- for smiley -->
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="div1">
+    <div class="div2">
+      <p>Welcome! Enter password:</p>
+      <input type="password" id="pswd" class="box" style="margin-bottom: 10px"><br>
+      <button id="myBtn" class="confirm" onclick="checkPswd()">Submit</button>
+    </div>
+  </div>
+</body>
+
+<script>
+
+
+  var input = document.getElementById("pswd");
+  input.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      document.getElementById("myBtn").click();
+    }
+  });
+</script>
+</html>
