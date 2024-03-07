@@ -95,114 +95,396 @@
       of emails they send to people after they get a loan. These emails will lead
       users back to Credible's hub (logged in experience), but the current hub
       is barebone & lacks direction and usefulness for progressing one's financial
-      goals/needs. For this reason, the product team was tasked with improving the
-      Credible hub.</p><br>
+      goals/needs. For this reason, I was tasked with improving the Credible hub.</p><br>
   </div>
 
-  <!--research & ideation-->
+  <!--identifying the problem-->
   <div class="casestudy-container">
-    <h2 style="margin-top: 0px">Evaluating the current hub</h2>
+    <h2 style="margin-top: 0px">Identifying the problem</h2>
     <p>I started this project by looking at the ui/ux of our current hub to identify
       pain points and areas for opportunity. This helped me gain a deeper understanding
       of the problem space and aid discussion of project goals with my PM.</p><br>
-    <img src="images/hub/evaluate.png" width="100%" style="margin-bottom: 64px">
-    <h4>Pain Points</h4>
-    <br>
-    <center><b>Overview for <span style="background-color: #FFE495">archived</span> users</b></center>
-    <img src="images/hub/painpoints1.png" width="100%" style="margin-bottom: 64px">
-    <center><b>Overview for <span style="background-color: #FFE495">active</span> users</b></center>
-    <img src="images/hub/painpoints2.png" width="100%" style="margin-bottom: 64px">
-    <center><b>Financial Tools</b></center>
-    <img src="images/hub/painpoints3.png" width="100%" style="margin-bottom: 64px">
+    <img src="images/hub/painpoints1.png" width="100%" style="margin-bottom: -10px">
+    <p class="caption" style="margin-bottom: 64px"><i>Overview page for archived users</i></p>
+    <img src="images/hub/painpoints2.png" width="100%" style="margin-bottom: -10px">
+    <p class="caption" style="margin-bottom: 64px"><i>Overview page for active users</i></p>
+    <img src="images/hub/painpoints3.png" width="100%" style="margin-bottom: -10px">
+    <p class="caption"><i>Financial tools page</i></p>
   </div>
 
-
+  <!--who's using the hub?-->
   <div class="casestudy-container" style="background-color: #F8F8F8;">
     <h4>Who is using the hub?</h4>
-    <p>ROUGH OMG: Basically want to explain that we looked the different subset
-      of users on the hub and prioritized optimization for who's using the hub
-      the most. Wanted to focus project goals on the users who are on the hub
-      the most</p><br>
-    <img src="images/hub/users.png" width="100%">
+    <p>Next I worked with my PM & business intelligence to learn more about our
+       hub users:</p>
+    <ul style="font-size: 18px">
+      <li>What have they already done on Credible? Have they started a loan request?</li>
+      <li>How did they get to the hub? Where are they coming from?</li>
+    </ul>
+    <br><img src="images/hub/users.png" width="100%" style="margin-bottom: 24px">
+    <p>Knowing their entry source helped me think through what the user's mindset
+       is and what needs/wants they have as they enter the hub. For example, 31% of
+       users with an active loan request are exiting their rates dashboard and
+       entering the hub. This suggests that they're unsure about their rate
+       options, which gives us the opportunity to a) provide info to make them
+       more confident in their options and/or b) show them other options.</p>
   </div>
 
-
+  <!--ideation & prioritization-->
   <div class="casestudy-container">
     <h2 style="margin-top: 0px">Ideation & Prioritization</h2>
-    <p>ROUGH OMG: Thinking about previous user research, customer goals, pain points, business objectives, and scope my PM and I defined a set of project goals.</p>
-    <br>
-    <img src="images/hub/goals.png" width="100%">
-    <p>ROUGH OMG: Should probably include some sort of mapping chart</p>
-    <br>
+    <p>I brainstormed opportunities & improvements based on customer goals,
+       business objectives, and the pain points I identified.</p>
+    <br><img src="images/hub/goals.png" width="100%" style="margin-bottom: 32px">
+    <p>For our largest user group, the archived users, I wanted to focus on optimizing
+      the loan request empty state (since it's the first thing they see) and
+      providing guidance (e.g. suggesting a product, leading them to a calculator,
+      etc.) Our next largest group of users are ones who currently have an active
+      loan request. Since these users are already in the funnel with a request in progress, I
+      wanted to focus on improving low hanging fruit in the hub to help them complete
+      their loan request and close on a loan.</p>
+  </div>
+
+  <!--prioritizing features-->
+  <div class="casestudy-container" style="background-color: #F8F8F8;">
+    <h4>Prioritizing features</h4>
+    <p>I worked with my PM to determine which ideas we wanted to
+      test & then prioritized them based on what subset of users they help, how
+      much they might impact conversion and engineering effort:</p>
+    <br><img src="images/hub/priority.png" width="100%" style="margin-bottom: 32px">
+    <!-- <ol style="font-size: 18px">
+      <li><b>Overview & loan request empty state</b></li>
+      <ul>
+        <li>Improving the "Overview" page was highest priority since it's
+          the default page when you sign in. As the first touchpoint, my goal for
+          this page was to provide more guidance for the user so they're better
+          able to discover products, financial tools, and other resources like
+          blogs and calculators.</li>
+        <li>The first section on "Overview" provides the user information on their
+          loan request. Since the majority of our users are archived, I worked
+          on optimizing the empty state for this section first.</li>
+      </ul>
+      <li><b>Loan request active state</b></li>
+      <ul>
+        <li>My next priority was optimizing the loan request active state since
+          our active users are the hub's second largest userbase. I wanted to
+          focus these improvements on emphasizing the users' immediate next step,
+          give more visibility to the "Best Rate Guarantee" value prop, and
+          provide the most relevant info at each stage of the request to aid
+          users in their decision.</p>
+      </ul>
+      <li><b>Navigation</b></li>
+      <ul>
+        <li>Navigation improvements were slated for last because they were scoped
+          as the largest engineeering effort. I wanted to improve the information
+          hierarchy & optimize the navigation for mobile, since the majority of
+          hub users are mobile.</p>
+      </ul>
+    </ol> -->
   </div>
 
 
-  <!--sketches & wireframes-->
-  <div class="casestudy-container" style="background-color: #F8F8F8;">
+  <!--competitor research-->
+  <div class="casestudy-container">
     <h4>Competitor Research</h4>
     <p>Before starting sketches, I looked at direct competitors, such as SoFi,
       and other companies, like Credit Karma and Nerdwallet, that are in the personal
       finance space but don't necessarily have a loans marketplace to get a sense of the landscape.</p>
     <br>
+    <img src="images/hub/competitor-screenshot.png" width="100%"><br><br>
     <img src="images/hub/competitor.png" width="100%" style="margin-bottom: 32px">
-    <div class="row" style="margin-bottom: 16px">
-      <div class="col-sm-3"><h6>Page structure</h6></div>
-      <div class="col-sm-9">
-        <p style="padding-top: 8px">Most sites have clearly labeled sections that include 3-4 products/modules
-          in them. Few sites show a mix of different modules displayed similar to
-          a “Pinterest” board.</p>
-      </div>
-    </div>
-    <div class="row" style="margin-bottom: 16px">
-      <div class="col-sm-3"><h6>What's above the fold?</h6></div>
-      <div class="col-sm-9">
-        <p style="padding-top: 8px">Most include a snapshot of what the user is monitoring on the site
-          (e.g. credit score). CTAs to check out one of their products typically
-          follows.</p>
-      </div>
-    </div>
-    <div class="row" style="margin-bottom: 16px">
-      <div class="col-sm-3"><h6>Monitoring tools</h6></div>
-      <div class="col-sm-9">
-        <p style="padding-top: 8px">1) Credit score 2) Account usage 3) Loan progress — Most aren’t
-          categorized with calculators. They have spots on the home page and
-          have their own designated pages.</p>
-      </div>
-    </div>
-    <div class="row" style="margin-bottom: 16px">
-      <div class="col-sm-3"><h6>Education</h6></div>
-      <div class="col-sm-9">
-        <p style="padding-top: 8px">Big push from Nerdwallet and Bankrate (which focus more on helping
-          users learn about finance), but less prominent on other sites.</p>
-      </div>
-    </div>
-    <div class="row" style="margin-bottom: 16px">
-      <div class="col-sm-3"><h6>Calculators</h6></div>
-      <div class="col-sm-9">
-        <p style="padding-top: 8px">Instead of directing users to a page with all their calculators, most
-          sites surface specific calculators where users would need them.</p>
-      </div>
-    </div>
-    <div class="row" style="margin-bottom: 16px">
-      <div class="col-sm-3"><h6>Recommendations</h6></div>
-      <div class="col-sm-9">
-        <p style="padding-top: 8px">All sites encourage users to check out the different products they offer.
-          They vary in how personalized the messaging is and how specific the recommendation is</p>
-      </div>
-    </div>
-    <div class="row" style="margin-bottom: 16px">
-      <div class="col-sm-3"><h6>Main Navigation</h6></div>
-      <div class="col-sm-9">
-        <p style="padding-top: 8px">Most links featured in the main navigation are goal oriented with links
-          like Finances, Loans, Tools, Invest, etc.</p>
-      </div>
-    </div>
+    <p>My key takeaways were...</p>
+    <ul style="font-size: 18px">
+      <li><b>Page structure</b>: vertically stacked sections vs board with mix
+        of different modules</li>
+      <li><b>Content above the fold</b>:</li>
+        <ul>
+          <li>Focus is on what users are monitoring (e.g. credit score, finances)</li>
+          <li>“Let’s show all our different products”</li>
+          <li>Product recommendations based on the user's profile</li>
+          <li>Highlight blog articles</li>
+        </ul>
+      <li><b>Presenting other products</b>:</li>
+        <ul>
+          <li>Show multiple products in one section</li>
+          <li>Give one product its own section for greater emphasis</li>
+          <li>Show specific offers (e.g. "Get a rate as low as 5%")</li>
+        </ul>
+      <li><b>Calculators</b>: placed strategically where the users could need them</li>
+    </ul>
   </div>
 
-  <div class="casestudy-container">
-    <h2 style="margin-top: 0px">Handoff</h2>
-    <img src="images/hub/handoff.png" width="80%">
+  <!--design iterations-->
+  <div class="casestudy-container" style="background-color: #F8F8F8;">
+    <h2 style="margin-top: 0px">Design explorations</h2>
+    <p style="font-size: 14px">(Note: Credible went through a rebrand during this
+      project, which is why you'll see our "Crediberry" pink instead of the orange
+      seen in earlier screenshots)</p><br>
+
+    <!--empty-->
+    <h4>Loan request empty state</h4>
+    <p>The current empty state has plain text stating "No active loan requests"
+      and "Get started today!", but doesn't include any actual CTA to <i>start</i>
+      a request. My redesign goal for this section was to show the user what our
+      different products are and give them paths to start a request for those products.
+      For my explorations, I tried different visual treatments and CTA types—even
+      considering embedding the first question of the form itself.</p>
+    <img src="images/hub/iterations/empty.png" width="100%" style="margin-top: 48px; margin-bottom:48px">
+    <p>My biggest takeaways from these explorations were:</p>
+    <ul style="font-size: 18px">
+      <li>Due to the amount of products Credible has, having primary and secondary
+        CTAs for each product (see option two) make the section vertically long &
+        overwhelming with the amount of buttons. So I iterated on using either the
+        link or ">" approach for less visual clutter & removing the secondary
+        "Learn More" CTA since a) we want more people to start the form and b)
+        the start of the form provides education about the loan and the process</li>
+      <li>Our simpler iconography (see options two and four) is less visually
+        overwhelming and less distracting than our more detailed pictographs</li>
+      <li>Displaying the first question of the form could help with getting more people
+        in the funnel, but it gives less visbility to the other loan options.
+        Plus our model for recommending products is in its starting phases, so I
+        wouldn't want to strongly market one loan option over the rest</li>
+    </ul>
+
+    <!--submission tiles-->
+    <h4 style="margin-top: 80px">Loan request active state</h4>
+    <p>We have 5 types of loan requests and each one has a different process, so
+      before jumping into designs I met with the PM and designer for each vertical
+      to understand:</p>
+    <ul style="font-size: 18px">
+      <li>What the steps of the request process are</li>
+      <li>What information is important for the user to know at each step</li>
+      <li>What our intended goal is for the user at each step</li>
+      <li>What pain points (if any) the user has at each step</li>
+    </ul>
+    <img src="images/hub/iterations/tiles-thinking.png" width="100%" style="margin-top: 32px;">
+    <p class="caption" style="margin-bottom: 64px"><i>Brainstorm—What's important for the user at each stage of their loan request?</i></p>
+    <p>Now that I had a better understanding of the different loan request
+      processes, I was able to start designing! For my explorations, I tried different
+      visual treatments for communicating to the user where they're at in the
+      process, providing info from their dashboard to encourage them to continue on,
+      clarity on what their next step is, and emphasizing the best rate guarantee
+      value prop.</p>
+    <img src="images/hub/iterations/tiles.png" width="100%" style="margin-top: 48px;">
+    <img src="images/hub/iterations/tiles-2.png" width="100%" style="margin-top: 48px; margin-bottom: 48px">
+    <p>Most of my iterations for this tile centered around how to show the user
+      useful info from their rates dashboard. The challenges I faced were making
+      this info easy to digest/understand, as well as meet legal requirements.
+      For example, I initally listed out what the lowest APR and lowest monthly
+      payment were (as these are two data points important to the user), but
+      legal reviewed it and we weren't able to display the APR and monthly payment by
+      themselves — they must be coupled together. So I pivoted the designs to show
+      the option with the lowest APR and the option with the lowest monthly payment.</p>
+
+    <!--financial tools-->
+    <h4 style="margin-top: 80px">Financial tools</h4>
+    <p>This section currently displays a simple banner with general value props about
+      our financial tools. For my initial explorations (see options one and two),
+      I iterated on this banner approach and focused my changes on better communicating
+      the benefits of the financial tools and making the ui more eye-catching
+      (e.g. using a colored background so it stands out the majority white tiles on the hub).</p>
+    <img src="images/hub/iterations/tools.png" width="100%" style="margin-top: 24px; margin-bottom: 48px">
+    <p>For my other explorations (see option four), I focused on highlighting the
+      specific monitoring tools we offer (Debt Tracker & Credit Score), since users
+      mentioned in interviews that they like to track this information. By emphasizing
+      these tools, I hope to see more engagement with our financial tools.</p>
+
+    <!--navigation-->
+    <h4 style="margin-top: 80px">Navigation</h4>
+    <p>I first thought about if we should keep the current left-side nav design
+      or change it to a top nav design (similar to our logged out pages). I
+      decided to keep the left-side nav because:</p>
+    <ul style="font-size: 18px">
+      <li>Vertical navigation allows for scalability. It will be easy to add new
+        hub features to the vertical nav whereas we'd eventually run out of room
+        with a horizontal one.</li>
+      <li>It's easier for people to search through a vertical list than a horizontal one.</li>
+      <li>Vertical navigation translates well to mobile</li>
+    </ul>
+    <img src="images/hub/iterations/navigation.png" width="100%" style="margin-top: 48px; margin-bottom: 64px">
+    <p>My biggest takeaways from these explorations were:</p>
+    <ul style="font-size: 18px">
+      <li>"Home" should be grouped with the rest of the hub pages instead of sitting by itself</li>
+      <li>The spacing between links can be improved to create visual balance and make the groupings more clear</li>
+      <li>The active state is most noticeable with the light blue background</li>
+      <li>Icons make the nav feel cluttered. Is there a way to make it feel more clean?</li>
+    </ul>
   </div>
+
+  <!--final designs-->
+  <div class="casestudy-container">
+    <h2 style="margin-top: 0px">Final designs</h2>
+    <p>After multiple design iterations, copy review, and legal sign-off, here are the final designs I handed off to the engineering team:</p><br>
+
+    <div class="row">
+      <div class="col-sm-6" style="padding: 0px">
+        <center><b>Previous</b></center>
+        <center><img src="images/hub/Home-Old.png" width="95%" style="margin-top: 12px; box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.20)"></center>
+      </div>
+      <div class="col-sm-6" style="padding: 0px">
+        <center><b>Final</b></center>
+        <center><img src="images/hub/Home.png" width="95%" style="margin-top: 12px; box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.20)"></center>
+      </div>
+    </div>
+    <br><br><br><br>
+    <center><b>Mobile designs</b></center>
+    <img src="images/hub/mobile.png" width="100%" style="margin-top: 12px; margin-bottom: 40px">
+    <br><hr class="solid"><br><br>
+    <h4>A closer look at the final designs</h4>
+    <div class="newempty">
+      <img src="images/hub/final/empty.png" width="100%" style="margin-top: 20px;margin-bottom: 20px">
+      <center style="margin-bottom: 20px"><button class="buttonstyle" onclick="showoldempty()">View previous design</button></center>
+    </div>
+    <div class="oldempty" style="display: none">
+      <img src="images/hub/previous/empty.png" width="100%" style="margin-bottom: 20px">
+      <center style="margin-bottom: 20px"><button class="buttonstyle" onclick="shownewempty()">View new design</button></center>
+    </div>
+    <p><b style="font-size: 20px">Loan request empty state</b>: This section
+      is shown to users without an active loan request and features paths to start
+      a new request for the various Credible products</p>
+    <ul style="font-size: 18px">
+      <li>Changed the "No active loan requests" headline to be more action oriented</li>
+      <li>Added our "prequalified rates" value prop to the subheadline
+        since it's a distinguishing factor from competitor sites offering generic rates</li>
+      <li>CTAs to all core and ancillary products — short descriptions for each
+        product & added an '>' arrow to make the clickable affordance clear</li>
+      <li>Included a path to our Money Plan quiz as guidance for users who don't
+        know where to start. Taking this quiz let's them see which loan products
+        they have the best chances of prequalifying for.</li>
+    </ul>
+    <br><hr class="solid"><br><br>
+    <div class="newtile">
+      <img src="images/hub/final/submission-tile.png" width="100%" style="margin-bottom: 20px">
+      <center style="margin-bottom: 20px"><button class="buttonstyle" onclick="showoldtile()">View previous design</button></center>
+    </div>
+    <div class="oldtile" style="display: none">
+      <img src="images/hub/previous/submission-tile.png" width="100%" style="margin-bottom: 20px">
+      <center style="margin-bottom: 20px"><button class="buttonstyle" onclick="shownewtile()">View new design</button></center>
+    </div>
+    <p><b style="font-size: 20px">Loan request active state</b>: This section is
+      shown to users with an active loan request and shows them what their next
+      step in the process is</p>
+    <ul style="font-size: 18px">
+      <li>For requests that are eligible for Best Rate Guarantee (BRG), a BRG badge
+        is added to the tile. This offering was previously missed by users when
+        marketed on the right rail, so this treatment will give it more visibility
+        and be better perceived as related to the loan request (following the
+        logic of the proximity principle).</li>
+      <li>Added a progress bar as a quick visual indicator for where they're at in
+        the process</li>
+      <li>Hid the request timeline behind a "Learn more" link since we want to
+        focus attention on just the next step instead of overwhelming them with
+        all future steps</li>
+      <li>Included key info at each stage of their request:</li>
+      <uL>
+        <li><u>Received rates</u>: Give a preview of what their rate options are.
+          Showing the lowest APR and lowest monthly payment options since the
+          most commonly selected options</li>
+        <li><u>Lender selected</u>: Nudge them to finish their request by showing
+          the option they selected</li>
+        <li><u>Loan funded</u>: Cross sell debt tracker so they can track their
+          loan on Credible</li>
+      </ul>
+    </ul>
+    <br><hr class="solid"><br><br>
+    <img src="images/hub/final/tools.png" width="100%" style="margin-bottom: 40px">
+    <p><b style="font-size: 20px">Financial tools section</b>: This is a new section that
+      will be shown to all users and features Credible's tracking tools</p>
+    <ul style="font-size: 18px">
+      <li>"New" pill will show until the user activates one of their financial tools</li>
+      <li>Chose to feature our debt tracker and credit score in this
+        snapshot since account balances and credit score were frequently brought
+        up in user interviews as something people find important to monitor</li>
+      <li>By highlighting our monitoring tools on the home page, I hypothesize we'll see
+        increased activation of these tools leading to more repeat
+        engagement on Credible</li>
+    </ul>
+    <br><hr class="solid"><br><br>
+    <img src="images/hub/final/calculator.png" width="100%" style="margin-bottom: 40px">
+    <p><b style="font-size: 20px">Calculators section</b>: This is a new section
+      that will be shown to all users and surfaces relevant calculators based on
+      their profile</p>
+    <ul style="font-size: 18px">
+      <li>Included the most relevant calculator directly on the page so they can
+        quickly recognize it's value/see how it functions & interact with it right away</li>
+      <li>Recommend 2 other calculators & provide a path to view all calculators</li>
+    </ul>
+    <br><hr class="solid"><br><br>
+    <div class="newresources">
+      <img src="images/hub/final/resources.png" width="100%" style="margin-bottom: 20px">
+      <center style="margin-bottom: 20px"><button class="buttonstyle" onclick="showoldresources()">View previous design</button></center>
+    </div>
+    <div class="oldresources" style="display: none">
+      <img src="images/hub/previous/resources.png" width="100%" style="margin-bottom: 20px">
+      <center style="margin-bottom: 20px"><button class="buttonstyle" onclick="shownewresources()">View new design</button></center>
+    </div>
+    <p><b style="font-size: 20px">Resources section</b>: This section will be shown
+      to all users and surfaces relevant blog articles based on their profile</p>
+    <ul style="font-size: 18px">
+      <li>Added the corresponding blog image for quicker recognition to what the
+        article is about</li>
+      <li>Removed the lengthy description from the tile since our blog titles are
+        seo optimized therefore decently descriptive by themselves</li>
+    </ul>
+    <br><hr class="solid"><br><br>
+    <div class="newnav">
+      <img src="images/hub/final/navigation.png" width="100%" style="margin-bottom: 20px">
+      <center style="margin-bottom: 20px"><button class="buttonstyle" onclick="showoldnav()">View previous design</button></center>
+    </div>
+    <div class="oldnav" style="display: none">
+      <img src="images/hub/previous/navigation.png" width="100%" style="margin-bottom: 20px">
+      <center style="margin-bottom: 20px"><button class="buttonstyle" onclick="shownewnav()">View new design</button></center>
+    </div>
+    <p><b style="font-size: 20px">Desktop navigation</b>: I focused on establishing
+      an information hiearchy that's easy to follow and makes the hub tools appear
+      most important</p>
+    <ul style="font-size: 18px">
+      <li>Updated the active state ui (bold font + light blue background) so
+        that it has better contrast from the inactive state</li>
+      <li>Reduced the spacing and modified the typography so that the 2 groups
+        of links ("My Credible Hub" vs "Compare Rates") are more clear</li>
+      <li>Reordered the nav so that the hub tools are listed before the products
+        since our priority for the user is to engage with the hub tools</li>
+      <li>Added icons to the hub links to aid recognition and so they appear more
+        prominent than the product links</li>
+      <li>Consolidated the links to individual calculators with one link to the
+        calculators page & now have links to individual financial tools since I want
+        to prioritize engagement with the tools over the calculators</li>
+    </ul>
+    <p><b style="font-size: 20px">Mobile navigation</b>: Redesigned the tabs at
+      the top of the page to be a bottom nav more similar to a native app</p>
+    <ul style="font-size: 18px">
+      <li>Renamed "Overview" to "Home" to be consistent with the naming
+        established in the side nav</li>
+      <li>Replaced "Archive" with "Calculators" since viewing archived loan requests
+        aren't important while financial calculators are more useful resources</li>
+      <li>Designed the active state ui to match the visual treatment done on desktop</li>
+    </ul>
+  </div>
+
+  <div class="casestudy-container" style="background-color: #F8F8F8;">
+    <h2>Learnings</h2>
+    <p>The three phases of the hub redesign were each rolled out as a/b tests. So
+      far we've seen success with the redesigned loan request empty state (with
+      more people entering the funnel and starting a loan application) and the
+      financial tools section (with more people activating these tools & coming
+      back to Credible to see credit score/account updates).
+    <p>On the flip side, we've seen a decrease in conversion with the redesigned
+      loan request active state. One hypothesis is that due to poor market conditions,
+      the "best options" we show aren't very good, so it deters people from wanting
+      to see the other options. This suggests we might want to test showing other
+      info (either from their dashboard or maybe educational tips) or even reverting
+      back to showing no information from their dashboard.</p>
+
+      <h6 style="margin-top: 80px;">Check out some other projects:</h6>
+      <div class="row" id="more-projects-gray">
+        <div class="col-sm-3"><button onclick="window.location.href='premium.html'">💰 Subscription</button></div>
+        <div class="col-sm-3"><button onclick="window.location.href='search.html'">🔍 Search</button></div>
+        <div class="col-sm-3"><button onclick="window.location.href='designsystem.html'">🎨 Design System</button></div>
+        <div class="col-sm-3"><button onclick="window.location.href='ftn.html'">📅 Five to Nine</button></div>
+      </div>
+  </div>
+
 
   <footer class="footer" style="background-color: #F8F8F8;">
     <h6>
@@ -212,7 +494,7 @@
     </h6>
     <br>
     <p>Designed and coded by me (ft. many iced lattes <i class="fa-sm fa-solid fa-mug-hot"></i>)</p>
-    <p>©2023 Allison Patacsil</p>
+    <p>©2024 Allison Patacsil</p>
   </footer>
 
 </body>

@@ -712,3 +712,62 @@ body > #header{position:fixed;}
 #priority-map {
   max-width: 650px;
 }
+
+/* Solid border */
+hr.solid {
+  border-top: 1px solid #bbb;
+}
+
+
+.div1 {
+  height: 100%;
+  width: 100%;
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.div2 {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 25px;
+  color: rgba(0,0,0,0.7);
+}
+
+.box {
+  text-align: center;
+  font-size: 20px;
+  outline: none;
+  width: 250px;
+  height: 35px;
+  border: none;
+  border-bottom: 2px solid rgba(0,0,0,0.7);
+}
+
+.confirm {
+  border: none;
+  font-size: 18px;
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+.buttonstyle{
+  border: 1px solid #939e91;
+  border-radius: 2px;
+  background-color: #d3e6cf;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  color: rgba(0,0,0,0.7);
+}
+
+.buttonstyle:hover{
+  border: 1px solid #4d6b47;
+  background-color: #4d6b47;
+  color: #fff;
+}

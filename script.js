@@ -27,3 +27,54 @@ for (i = 0; i < faq.length; i++) {
         }
     });
 }
+
+function checkPswd() {
+    var confirmPassword = "latte";
+    var password = document.getElementById("pswd").value;
+    if (password == confirmPassword) {
+         window.location="lihp.html";
+    }
+    else{
+        alert("Oops! Wrong password. Please try again.");
+    }
+}
+
+function showoldresources() {
+  $("div.oldresources").show();
+  $("div.newresources").hide();
+}
+
+function shownewresources() {
+  $("div.newresources").show();
+  $("div.oldresources").hide();
+}
+
+function showoldempty() {
+  $("div.oldempty").show();
+  $("div.newempty").hide();
+}
+
+function shownewempty() {
+  $("div.newempty").show();
+  $("div.oldempty").hide();
+}
+
+function showoldtile() {
+  $("div.oldtile").show();
+  $("div.newtile").hide();
+}
+
+function shownewtile() {
+  $("div.newtile").show();
+  $("div.oldtile").hide();
+}
+
+function showoldnav() {
+  $("div.oldnav").show();
+  $("div.newnav").hide();
+}
+
+function shownewnav() {
+  $("div.newnav").show();
+  $("div.oldnav").hide();
+}
