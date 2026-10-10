@@ -1,54 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Allison Patacsil</title>
+  <title>Search Improvements · Allison Patacsil</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--css-->
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600,700" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <meta name="theme-color" content="#FAF8F3">
   <link rel="icon" href="images/favicon.png">
-  <link rel="stylesheet" href="https://use.typekit.net/eep3vgi.css">
-  <link rel="stylesheet" href="style.css">
-  <!--js-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <script src="https://kit.fontawesome.com/1db66828d2.js" crossorigin="anonymous"></script> <!-- for smiley -->
-  <script src="script.js"></script>
+
+  <!-- set theme before paint so there's no flash -->
+  <script>
+    document.documentElement.classList.add('js');
+    try {
+      var savedTheme = localStorage.getItem('theme');
+      if (savedTheme) document.documentElement.dataset.theme = savedTheme;
+    } catch (e) {}
+  </script>
+
+  <!--css-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="casestudy.css">
+  <script src="https://kit.fontawesome.com/1db66828d2.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <div class="wash" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <!--navbar-->
-  <nav class="navbar navbar-inverse navbar-fixed-top" id="header">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-left">
-            <li><a href="index.html#project-scroll">projects</a></li>
-            <li><a href="https://drive.google.com/file/d/1MW6BfMFJdYOJbZj8gKV54H1q480fLhm7/view?usp=sharing" target="_blank">resume</a></li>
-            <li><a href="about.html">about</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="https://www.linkedin.com/in/agp/" target="_blank"><img src="images/icons/linkedin.png" style="width: 20px"></a></li>
-          <li><a href="https://dribbble.com/allisonpatacsil" target="_blank"><img src="images/icons/dribbble.png" style="width: 20px"></a></li>
-          <li><a href="mailto:agpatacsil@gmail.com" target="_blank"><img src="images/icons/mail.png" style="width: 20px"></a></li>
+  <header class="nav" id="header">
+    <nav class="nav-inner wrap" aria-label="Main">
+      <ul class="nav-links">
+        <li><a href="index.html#work">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="https://drive.google.com/file/d/19u4LXP5re4MUCEdd3hz6NmKgBS8GQ7Wa/view" target="_blank" rel="noopener">Resume<span class="arrow" aria-hidden="true">↗</span></a></li>
+      </ul>
+      <div class="nav-right">
+        <ul class="nav-social">
+          <li><a href="https://www.linkedin.com/in/agp/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M7.5 10.5v6M7.5 7.4v.1M11 16.5v-6m0 2.6c0-1.6 1-2.8 2.6-2.8s2.4 1 2.4 2.8v3.4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </a></li>
+          <li><a href="https://dribbble.com/allisonpatacsil" target="_blank" rel="noopener" aria-label="Dribbble">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 3.5c3.2 4 5.6 9.5 6.6 17M3 10.5c5 .6 10.4-.6 15.4-4.4M5.4 18.6c3-4.2 8.4-6 15.5-4.4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+          </a></li>
+          <li><a href="mailto:agpatacsil@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 7l8.5 6 8.5-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/></svg>
+          </a></li>
         </ul>
+        <button class="theme-toggle" id="theme-toggle" type="button" role="switch" aria-checked="false" aria-label="Dark mode">
+          <span class="theme-label theme-label-iced" aria-hidden="true">iced</span>
+          <span class="theme-track" aria-hidden="true"><span class="theme-knob"></span></span>
+          <span class="theme-label theme-label-hot" aria-hidden="true">hot</span>
+        </button>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
-  <div class="casestudy-space"></div>
-
-  <!--hero section-->
+  <main id="main" class="cs">
+<!--hero section-->
   <div class="container" style="margin-bottom: 48px;">
     <h1 style="line-height: 54px;">Search Improvements</h1>
     <p class="intro">Find what you need with quickness & ease</p>
@@ -80,7 +92,7 @@
   <img src="images/search/hero.png" width=100%>
 
   <!--background-->
-  <div class="casestudy-container" style="background-color: #F8F8F8;">
+  <div class="casestudy-container is-alt">
     <h4>Background</h4>
     <p>Abound is an online two-sided marketplace for buying and selling wholesale. Consistent
       feedback from our retailers is that our search is "bad" & they can't find what
@@ -127,7 +139,7 @@
   </div>
 
   <!--data around search-->
-  <!-- <div class="casestudy-container" style="background-color: #F8F8F8;">
+  <!-- <div class="casestudy-container is-alt">
     <h4>Data Around Search</h4>
     <p>I also wanted to get some data points around search, so I worked with my PM to find answers to some of my questions:</p>
     <ul style="font-size: 18px">
@@ -145,7 +157,7 @@
 
 
   <!--user interviews-->
-  <div class="casestudy-container" style="background-color: #F8F8F8">
+  <div class="casestudy-container is-alt">
     <h4>Interviewing Retailers</h4>
     <div class="row">
       <div class="col-sm-8">
@@ -241,7 +253,7 @@
 
 
   <!--Ideation-->
-  <div class="casestudy-container" style="background-color: #F8F8F8">
+  <div class="casestudy-container is-alt">
     <h2>Ideation & Prioritization</h2>
     <p>I brainstormed opportunities & improvements based on my interview findings
       & the pain points I identified:</p>
@@ -363,7 +375,7 @@
     <br><br>
   </div>
 
-  <div class="casestudy-container" style="background-color: #F8F8F8">
+  <div class="casestudy-container is-alt">
     <h2>Learnings</h2>
     <p><b>Improve search dropdown ui/ux:</b> After releasing the ui/ux enhancements,
       we saw frustrated clicks in the search dropdown decrease & clicks on the
@@ -386,23 +398,28 @@
 
       <h6 style="margin-top: 80px;">Check out some other projects:</h6>
       <div class="row" id="more-projects-gray">
-        <div class="col-sm-3"><button onclick="window.location.href='login.html'">💸 Credible Hub</button></div>
+        <div class="col-sm-3"><button onclick="window.location.href='credible-hub.html'">💸 Credible Hub</button></div>
         <div class="col-sm-3"><button onclick="window.location.href='premium.html'">💰 Subscription</button></div>
         <div class="col-sm-3"><button onclick="window.location.href='designsystem.html'">🎨 Design System</button></div>
         <div class="col-sm-3"><button onclick="window.location.href='ftn.html'">📅 Five to Nine</button></div>
       </div>
   </div>
+  </main>
 
-  <footer class="footer" style="background-color: #F8F8F8;">
-    <h6>
-      <a href="https://www.linkedin.com/in/agp/" target="_blank">Linkedin ↗</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="https://dribbble.com/allisonpatacsil" target="_blank">Dribbble ↗</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="mailto: agpatacsil@gmail.com" target="_blank">Email ↗</a>
-    </h6>
-    <br>
-    <p>Designed and coded by me (ft. many iced lattes <i class="fa-sm fa-solid fa-mug-hot"></i>)</p>
-    <p>©2024 Allison Patacsil</p>
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-bottom">
+        <ul class="footer-links">
+          <li><a href="https://www.linkedin.com/in/agp/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+          <li><a href="https://dribbble.com/allisonpatacsil" target="_blank" rel="noopener">Dribbble ↗</a></li>
+          <li><a href="mailto:agpatacsil@gmail.com">Email</a></li>
+          <li><a href="https://drive.google.com/file/d/19u4LXP5re4MUCEdd3hz6NmKgBS8GQ7Wa/view" target="_blank" rel="noopener">Resume ↗</a></li>
+        </ul>
+        <p class="footer-credit">Designed &amp; coded by Allison Patacsil (ft. many iced lattes) · ©<span id="year">2026</span></p>
+      </div>
+    </div>
   </footer>
 
+  <script src="home.js"></script>
 </body>
 </html>

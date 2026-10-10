@@ -1,0 +1,19 @@
+{
+  "pages": [
+    {
+      "slug": "credible-hub",
+      "title": "Credible Hub",
+      "label": "Credible",
+      "source": "private/credible-hub/page.html",
+      "scripts": [
+        "script.js"
+      ]
+    },
+    {
+      "slug": "biy",
+      "title": "BIY funnel optimizations",
+      "label": "Betterment",
+      "source": "private/biy/page.html"
+    }
+  ]
+}

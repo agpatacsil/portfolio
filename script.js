@@ -1,80 +1,15 @@
-$(window).scroll(function() {
-  var scroll = $(window).scrollTop();
-  if (scroll > 0) {
-    $("#header").addClass("active");
-  }
-  else{
-    $("#header").removeClass("active");
-  }
-});
+// "view previous / new design" toggles used in the credible hub case study
 
-
-var faq = document.getElementsByClassName("faq-page");
-var i;
-
-for (i = 0; i < faq.length; i++) {
-    faq[i].addEventListener("click", function () {
-        /* Toggle between adding and removing the "active" class,
-        to highlight the button that controls the panel */
-        this.classList.toggle("active");
-
-        /* Toggle between hiding and showing the active panel */
-        var body = this.nextElementSibling;
-        if (body.style.display === "block") {
-            body.style.display = "none";
-        } else {
-            body.style.display = "block";
-        }
-    });
+function swapDesign(show, hide) {
+  document.querySelectorAll('div.' + show).forEach(function (el) { el.style.display = 'block'; });
+  document.querySelectorAll('div.' + hide).forEach(function (el) { el.style.display = 'none'; });
 }
 
-function checkPswd() {
-    var confirmPassword = "latte";
-    var password = document.getElementById("pswd").value;
-    if (password == confirmPassword) {
-         window.location="lihp.html";
-    }
-    else{
-        alert("Oops! Wrong password. Please try again.");
-    }
-}
-
-function showoldresources() {
-  $("div.oldresources").show();
-  $("div.newresources").hide();
-}
-
-function shownewresources() {
-  $("div.newresources").show();
-  $("div.oldresources").hide();
-}
-
-function showoldempty() {
-  $("div.oldempty").show();
-  $("div.newempty").hide();
-}
-
-function shownewempty() {
-  $("div.newempty").show();
-  $("div.oldempty").hide();
-}
-
-function showoldtile() {
-  $("div.oldtile").show();
-  $("div.newtile").hide();
-}
-
-function shownewtile() {
-  $("div.newtile").show();
-  $("div.oldtile").hide();
-}
-
-function showoldnav() {
-  $("div.oldnav").show();
-  $("div.newnav").hide();
-}
-
-function shownewnav() {
-  $("div.newnav").show();
-  $("div.oldnav").hide();
-}
+function showoldresources() { swapDesign('oldresources', 'newresources'); }
+function shownewresources() { swapDesign('newresources', 'oldresources'); }
+function showoldempty() { swapDesign('oldempty', 'newempty'); }
+function shownewempty() { swapDesign('newempty', 'oldempty'); }
+function showoldtile() { swapDesign('oldtile', 'newtile'); }
+function shownewtile() { swapDesign('newtile', 'oldtile'); }
+function showoldnav() { swapDesign('oldnav', 'newnav'); }
+function shownewnav() { swapDesign('newnav', 'oldnav'); }
