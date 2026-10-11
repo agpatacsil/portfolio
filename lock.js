@@ -68,6 +68,7 @@
     });
     document.title = page.title + ' · Allison Patacsil';
     window.scrollTo(0, 0);
+    document.dispatchEvent(new Event('casestudy:ready'));
   }
 
   function attempt(password, remembered) {

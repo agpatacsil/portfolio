@@ -81,10 +81,6 @@
             <h1 class="hero-title" id="hero-title">Hi, I'm Allison</h1>
             <p class="hero-role"><span>Senior product designer ·</span> <span>Iced latte enthusiast ·</span> <span>NYC</span></p>
             <p class="hero-statement">I design delightful, meaningful experiences, currently making saving and investing easier at Betterment.</p>
-            <div class="hero-actions">
-              <a class="btn" href="#work">View work</a>
-              <a class="link-underline" href="https://drive.google.com/file/d/19u4LXP5re4MUCEdd3hz6NmKgBS8GQ7Wa/view" target="_blank" rel="noopener">Resume ↗</a>
-            </div>
           </div>
 
           <!-- portrait with doodles that draw themselves in -->
@@ -144,15 +140,19 @@
           </div>
           <ul class="work-grid">
           <li class="work-item reveal">
-            <div class="card is-soon">
-              <!-- TODO: swap in a cover image + link once the case study is ready -->
-              <span class="card-img card-placeholder tone-sky"><span>Case study coming soon</span></span>
+            <a class="card" href="ai-account-recommender.html">
+              <!-- cover shows the launched product; the case study itself stays password protected -->
+              <span class="card-img has-lock">
+                <img class="img-light" src="images/menu/ai-recommender.jpg" alt="Betterment app screens: the home page, a recommended Roth IRA, and its AI explanation" width="1600" height="1000" loading="lazy">
+                <img class="img-dark" src="images/menu/ai-recommender-dark.jpg" alt="Betterment app screens: the home page, a recommended Roth IRA, and its AI explanation" width="1600" height="1000" loading="lazy">
+                <span class="card-lock"><svg class="lock" viewBox="0 0 16 16" aria-hidden="true"><rect x="3" y="7" width="10" height="7.5" rx="1.8" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 7V5.2a2.5 2.5 0 015 0V7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg> Password protected</span>
+              </span>
               <span class="card-meta">
                 <span class="card-title">AI account recommender</span>
                 <span class="card-company">AI</span>
               </span>
               <span class="card-desc">Helping customers find the right Betterment account for their goals.</span>
-            </div>
+            </a>
           </li>
           <li class="work-item reveal">
             <div class="card is-soon">

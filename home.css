@@ -326,14 +326,6 @@ h1, h2, h3, p, figure {
   letter-spacing: -0.015em;
 }
 
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 14px 24px;
-  margin-top: 36px;
-}
-
 .btn {
   display: inline-flex;
   align-items: center;
@@ -526,6 +518,7 @@ h1, h2, h3, p, figure {
 }
 
 .card-img img {
+  display: block;
   width: 100%;
   aspect-ratio: 16 / 10;
   object-fit: cover;
@@ -602,6 +595,41 @@ h1, h2, h3, p, figure {
   font-size: clamp(22px, 2.2vw, 28px);
   font-weight: 500;
   letter-spacing: -0.02em;
+}
+
+/* covers with a light and dark version; locked case studies get a small pill */
+.card-img .img-dark {
+  display: none;
+}
+
+:root[data-theme="dark"] .card-img .img-light {
+  display: none;
+}
+
+:root[data-theme="dark"] .card-img .img-dark {
+  display: block;
+}
+
+.card-img.has-lock {
+  position: relative;
+}
+
+.card-lock {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 11px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--paper-raised) 88%, transparent);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 0 1px 3px rgba(28, 29, 34, .12);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--ink-soft);
 }
 
 /* placeholder covers until the case studies are ready */

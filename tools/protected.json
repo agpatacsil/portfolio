@@ -1,19 +1,5 @@
-{
-  "pages": [
-    {
-      "slug": "credible-hub",
-      "title": "Credible Hub",
-      "label": "Credible",
-      "source": "private/credible-hub/page.html",
-      "scripts": [
-        "script.js"
-      ]
-    },
-    {
-      "slug": "biy",
-      "title": "BIY funnel optimizations",
-      "label": "Betterment",
-      "source": "private/biy/page.html"
-    }
-  ]
-}
+{"pages":[
+  {"slug": "credible-hub", "title": "Credible Hub", "label": "Credible", "source": "private/credible-hub/page.html", "scripts": ["script.js"]},
+  {"slug": "biy", "title": "BIY funnel optimizations", "label": "Betterment", "source": "private/biy/page.html"},
+  {"slug": "ai-account-recommender", "title": "AI account recommender", "label": "Betterment", "source": "private/ai-account-recommender/page.html", "scripts": ["casestudy.js"]}
+]}

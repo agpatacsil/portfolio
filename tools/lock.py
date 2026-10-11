@@ -22,7 +22,9 @@ To protect a new case study (e.g. a Betterment project):
   - add an entry to tools/protected.json,
   - run this script again with the same password.
 
-Uses only the Mac's built-in tools (openssl, sips); nothing to install.
+Uses the Mac's built-in tools (openssl, sips). If the Pillow library is installed
+(python3 -m pip install --user pillow), images are packed as WebP, about half the
+size of JPEG at the same visual quality; without it they fall back to JPEG.
 """
 
 import base64
@@ -60,9 +62,23 @@ def sips_info(path):
     return int(match.group(1)) if match else 0
 
 
+try:  # WebP keeps screenshots crisp at about half the size of JPEG (needs Pillow)
+    from PIL import Image as _PIL
+    from io import BytesIO as _BytesIO
+except ImportError:
+    _PIL = None
+
+
 def shrink(path, workdir):
-    """Return (mime, bytes) for an image, re-encoding big screenshots as JPEG."""
+    """Return (mime, bytes) for an image: WebP when Pillow is installed, else JPEG via sips."""
     ext = os.path.splitext(path)[1].lower()
+    if _PIL and ext in ('.png', '.jpg', '.jpeg', '.webp'):
+        im = _PIL.open(path)
+        if im.width > MAX_WIDTH:
+            im = im.resize((MAX_WIDTH, round(im.height * MAX_WIDTH / im.width)), _PIL.LANCZOS)
+        buf = _BytesIO()
+        im.save(buf, 'WEBP', quality=85, method=6)
+        return 'image/webp', buf.getvalue()
     if ext in ('.png', '.jpg', '.jpeg'):
         out = os.path.join(workdir, 'img.jpg')
         cmd = ['sips', '-s', 'format', 'jpeg', '-s', 'formatOptions', '82']
@@ -81,6 +97,7 @@ def build_bundle(entry, workdir):
     source = os.path.join(ROOT, entry['source'])
     with open(source, encoding='utf-8') as f:
         page = f.read()
+    page = re.sub(r'<!--.*?-->', '', page, flags=re.S)  # comments (incl. preview notes) never get published
     match = re.search(r'<main[^>]*>(.*)</main>', page, re.S)
     if not match:
         sys.exit(f"{entry['source']}: couldn't find <main> ... </main>")
@@ -102,7 +119,8 @@ def build_bundle(entry, workdir):
 
     content = re.sub(r'(<img\b[^>]*?)src="([^"]+)"', swap, content)
     size = sum(len(a['data']) for a in assets.values()) * 3 // 4
-    print(f"  {len(assets)} images, {size / 1e6:.1f} MB after shrinking")
+    fmt = 'WebP' if _PIL else 'JPEG (install Pillow for WebP)'
+    print(f"  {len(assets)} images, {size / 1e6:.1f} MB after shrinking, as {fmt}")
     return {'check': 'unlocked', 'title': entry['title'], 'html': content, 'assets': assets}
 
 
@@ -112,11 +130,14 @@ def encrypt(bundle, password, out_path, workdir):
         json.dump(bundle, f)
     env = dict(os.environ, LOCKPW=password)
     base = ['openssl', 'enc', '-aes-256-cbc', '-pbkdf2', '-iter', str(ITERATIONS), '-md', 'sha256', '-pass', 'env:LOCKPW']
-    subprocess.run(base + ['-salt', '-in', plain, '-out', out_path], env=env, check=True)
+    # write next to the bundle first, so a failed run never leaves a half-written file behind
+    tmp_out = os.path.join(workdir, 'bundle.bin')
+    subprocess.run(base + ['-salt', '-in', plain, '-out', tmp_out], env=env, check=True)
     # round trip, so a broken bundle never gets published
-    check = subprocess.run(base + ['-d', '-in', out_path], env=env, capture_output=True, check=True).stdout
+    check = subprocess.run(base + ['-d', '-in', tmp_out], env=env, capture_output=True, check=True).stdout
     if json.loads(check)['check'] != 'unlocked':
         sys.exit('Encryption check failed, nothing published.')
+    shutil.move(tmp_out, out_path)
     os.remove(plain)
 
 
